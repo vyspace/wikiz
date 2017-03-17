@@ -36,33 +36,28 @@ module.exports = function(grunt) {
 		},
 		clean: {
 			dest: {
-				src: ['css/*', 'dest/*.html', 'dest/css/*', 'dest/js/*', 'dest/img/*']
+				src: ['dest/*.html', 'dest/css/*', 'dest/js/*', 'dest/img/*', 'dest/plugin/*']
 			}
 		},
 		copy: {
+			plugin: {
+				src: ['plugin/*.js'],
+				dest: 'dest/plugin',
+				filter: 'isFile'
+			}
+			img: {
+				src: ['img/*.jpg', 'img/*.png'],
+				dest: 'dest/img',
+				filter: 'isFile'
+			},
 			html: {
 				files: [{
 					src: ['./*.html'],
 					dest: 'dest/',
 					filter: 'isFile'
 				}]
-			},
-			img: {
-				src: ['img/*.jpg', 'img/*.png'],
-				dest: 'dest/',
-				filter: 'isFile'
 			}
-		},
-		usemin: {
-		    html: ['dest/*.html'],
-		    options: {
-		    	blockReplacements: {
-					img: function (block) {
-						return '<img src="' + block.dest + '" />';
-					}
-				}
-		    }
-		}   
+		}  
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
@@ -70,12 +65,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-usemin');
-	
+	grunt.loadNpmTasks('grunt-contrib-clean');	
 
 	grunt.registerTask('default', ['compass']);
-
-	grunt.registerTask('produce', ['clean', 'compass', 'cssmin', 'jshint', 'uglify', 'copy', 'usemin']);
+	grunt.registerTask('produce', ['clean', 'compass', 'cssmin', 'jshint', 'uglify', 'copy']);
 
 };
