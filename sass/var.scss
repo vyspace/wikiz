@@ -1,0 +1,12 @@
+//basic size
+$ax-width:1180px;
+$phone-width: 768px;
+$pad-width: 992px;
+$pc-width: 1210px;
+
+//basic color
+$ax-gray:#D2D6D3;
+
+//basic icon
+$icons: sprite-map("icons/*.png", $spacing: 2px, $layout: horizontal, $icons-sprite-dimensions: true);
+

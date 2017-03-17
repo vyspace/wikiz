@@ -1,0 +1,93 @@
+.mar-0 {
+  margin: 0;
+}
+
+.pdn-0 {
+  padding: 0;
+}
+
+.header {
+  border-bottom: 1px solid #D2D6D3;
+  height: 80px;
+  padding-top: 15px;
+}
+.header .search-icon {
+  background-color: #fff;
+  border-right: 0;
+}
+.header .search-text {
+  border-left: 0;
+}
+.header .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.footer .box-top {
+  border-bottom: 1px solid #D2D6D3;
+  padding: 50px 50px 30px 50px;
+}
+.footer .box-middle {
+  border-bottom: 1px solid #D2D6D3;
+  padding-top: 30px;
+}
+.footer .box-bottom {
+  padding-top: 15px;
+  text-align: center;
+  color: #999;
+}
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+  color: #999;
+}
+.footer ul li {
+  padding-bottom: 6px;
+}
+.footer .title {
+  font-size: 16px;
+  padding-bottom: 12px;
+  color: #000;
+}
+.footer .small {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .qr-hidden {
+    display: none;
+  }
+}
+.icon-sprite {
+  background-image: url('../img/icons-sf71ed06b18.png');
+  background-repeat: no-repeat;
+}
+
+.icon-a {
+  width: 102px;
+  height: 96px;
+  background-position: 0 0;
+}
+
+.icon-b {
+  width: 102px;
+  height: 96px;
+  background-position: -104px 0;
+}
+
+.icon-c {
+  width: 102px;
+  height: 96px;
+  background-position: -208px 0;
+}

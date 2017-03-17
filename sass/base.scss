@@ -1,0 +1,101 @@
+@import "compass/css3";
+@import "compass/utilities/sprites";
+@import 'var.scss';
+.mar-0{
+	margin:0;
+}
+.pdn-0{
+	padding:0;
+}
+.header {
+    border-bottom: 1px solid $ax-gray;
+    height: 80px;
+    padding-top:15px;
+
+    .search-icon {
+		background-color: #fff;
+		border-right:0;
+	}
+	.search-text{
+		border-left:0;
+	}
+	.icon-bar{
+		display: block;
+	    width: 22px;
+	    height: 2px;
+	    border-radius: 1px;
+		background-color:#000;
+	}
+}
+.navbar{
+	border-radius: 0px;
+}
+.slide{
+	img{
+		width:100%
+	}
+}
+.footer{
+	.box-top {
+		border-bottom: 1px solid $ax-gray;
+		padding:50px 50px 30px 50px;
+	}
+	.box-middle {
+		border-bottom: 1px solid $ax-gray;
+		padding-top: 30px;
+	}
+	.box-bottom {
+		padding-top: 15px;
+		text-align: center;
+		color:#999;
+	}
+	ul{
+		padding-left: 0;
+    	list-style: none;
+    	color: #999;
+    	li {
+    		padding-bottom: 6px;
+    	}
+	}
+	.title{
+		font-size:16px;
+		padding-bottom: 12px;
+		color: #000;
+	}
+	.small{
+		font-size:12px;
+	}
+}
+
+@media (max-width: $phone-width) {
+	.qr-hidden {
+		display:none;
+	}
+}
+@media (max-width: $pad-width) {
+
+}
+@media (max-width: $pc-width) {
+
+}
+
+.icon-sprite {
+	background-image: sprite-url($icons);	
+	background-repeat: no-repeat;
+}
+.icon-a{
+    width: image-width(sprite-file($icons, 1));
+    height: image-height(sprite-file($icons, 1));
+    background-position: sprite-position($icons, 1);
+}
+.icon-b{
+	width: image-width(sprite-file($icons, 2));
+    height: image-height(sprite-file($icons, 2));
+    background-position: sprite-position($icons, 2);
+}
+.icon-c{
+	width: image-width(sprite-file($icons, 3));
+    height: image-height(sprite-file($icons, 3));
+    background-position: sprite-position($icons, 3);
+}
+

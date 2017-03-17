@@ -1,0 +1,38 @@
+.main-body ul {
+  list-style: none;
+}
+
+.category {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0;
+}
+.category .item {
+  width: 220px;
+  height: 262px;
+  float: left;
+  text-align: left;
+  text-align-last: left;
+  background: #f00;
+}
+@media (min-width: 768px) {
+  .category .mrgr {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .category .mrgr {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1210px) {
+  .category .mrgr {
+    margin-right: 20px;
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+  .justify-range {
+    font-size: 0;
+  }
+}

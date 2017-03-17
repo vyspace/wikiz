@@ -1,0 +1,40 @@
+@import "compass/css3";
+@import 'var.scss';
+.main-body {
+	ul {
+		list-style: none;
+	}
+}
+.category {
+	max-width: $ax-width;
+	margin: auto;
+	padding: 0;
+    .item {
+    	width: 220px;
+    	height: 262px;
+    	float: left;
+    	text-align: left;
+    	text-align-last: left;
+    	background: #f00;
+    }
+    @media (min-width: $phone-width) {
+		.mrgr {
+	    	margin-right:5px;
+	    }
+	}
+	@media (min-width: $pad-width) {
+		.mrgr {
+	    	margin-right:10px;
+	    }
+	}
+	@media (min-width: $pc-width) {
+		.mrgr {
+	    	margin-right:20px;
+	    }
+	}
+}
+@media all and (-webkit-min-device-pixel-ratio:0){
+	.justify-range {
+	    font-size: 0;
+	}
+}
