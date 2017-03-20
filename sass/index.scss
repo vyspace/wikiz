@@ -1,6 +1,8 @@
 @import "compass/css3";
 @import 'var.scss';
 .main-body {
+	padding-top: 30px;
+	padding-bottom: 70px;
 	ul {
 		list-style: none;
 	}
@@ -9,29 +11,144 @@
 	max-width: $ax-width;
 	margin: auto;
 	padding: 0;
-    .item {
+	.title {
+		color: $ax-green;
+		font-size: 24px;
+		border-bottom: $ax-bdr;
+		margin-bottom: 15px;
+	}
+    .item-1 {
     	width: 220px;
     	height: 262px;
     	float: left;
-    	text-align: left;
-    	text-align-last: left;
-    	background: #f00;
+    	background-color: #fff;
+    	padding: 10px;
+    	.entry-name {
+    		color: $ax-gray;
+    		font-size: 12px;
+    		padding-bottom: 5px;
+    	}
+    	.entry-value {
+    		font-size: 16px;
+    		padding-bottom: 15px;
+    	}
+    	.finish {
+    		font-size: 12px;	
+    		padding-bottom: 5px;
+    	}
+    	.finish-name {
+    		color: $ax-gray;
+    	}
+    	.finish-value {
+    		color: $ax-green;
+    	}
+    	.finish-strip {
+    		height: 8px;
+    		border-radius: 4px;
+    		background-color: $ax-body-gray;
+    		margin-bottom: 12px;
+    	}
+    	.finish-strip-value {
+    		height: 8px;
+    		border-radius: 4px;
+    		background-color: $ax-green;
+    		width: 30%;
+    	}
+    	.list {
+    		padding-bottom: 5px;
+    		font-size: 14px;
+    	}
+    	.list-name {
+    		color: $ax-gray;
+    		padding-right: 10px;
+    	}
+    	.btn-look {
+    		display: block;
+    		padding: 0;
+    		background-color: #fff;
+    		color: $ax-green;
+    		border: 1px solid $ax-green;
+    		height: 30px;
+    		line-height: 29px;
+    		font-size: 16px;
+    		border-radius: 15px;
+    		margin-top: 10px;
+    		&:hover {
+    			background-color: $ax-green;
+    			color: #fff;
+    		}
+    	}
     }
-    @media (min-width: $phone-width) {
-		.mrgr {
-	    	margin-right:5px;
-	    }
-	}
-	@media (min-width: $pad-width) {
-		.mrgr {
-	    	margin-right:10px;
-	    }
-	}
-	@media (min-width: $pc-width) {
-		.mrgr {
-	    	margin-right:20px;
-	    }
-	}
+    .item-2 {
+    	width: 224px;
+    	height: 300px;
+    	float: left;
+    	position: relative;
+    	.card-1 {
+    		width: 220px;
+    		height: 100%;
+    		background-color: #fff;
+    		float: right;
+    	}
+    	.card-2 {
+    		height: 100%;
+    		background-color: #fff;
+    	}
+    	.proof {
+    		height: 220px;
+    		background: url(../img/index-pro.jpg) no-repeat;
+    		background-position: center;
+    		border-bottom: $ax-bdr;
+    	}
+    	.explain {
+    		padding: 10px 20px 0px 20px
+    	}
+    	.tag-g {
+    		position: absolute;
+    		top: 10px;
+    	}
+    	.name {
+    		font-size: 16px;
+    	}
+    	.labels {
+    		div {
+    			float :left;
+    			font-sieze: 14px;
+    			color: #999;
+    			border: $ax-bdr;
+    			padding: 2px 4px;
+    			border-radius: 2px;
+    			margin: 5px 5px 5px 0;
+    		}
+    	}
+    }
+    .mgr-b15 {
+    	margin-bottom: 15px;
+    }
+}
+.mgr-t20 {
+	margin-top: 20px;
+}
+@media (max-width: $phone-width) {
+	.mrgr-1 {
+    	margin-right: 10px;
+    	margin-bottom: 10px;
+    }
+    .mrgr-2 {
+    	margin-right: 10px;
+    	margin-bottom: 10px;
+    }
+}
+@media (min-width: $phone-width) {
+	.mrgr-1 {
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    }
+    .mrgr-2 {
+    	margin-right: 15px;
+    	margin-bottom: 15px;
+    }
+    
 }
 @media all and (-webkit-min-device-pixel-ratio:0){
 	.justify-range {

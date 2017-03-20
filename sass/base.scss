@@ -7,17 +7,54 @@
 .pdn-0{
 	padding:0;
 }
+a {
+	color: #333;
+}
+.search-icon {
+	background-color: #fff;
+	border-right:0;
+	padding: 0 7px;
+}
 .header {
-    border-bottom: 1px solid $ax-gray;
+    border-bottom: $ax-bdr;
     height: 80px;
-    padding-top:15px;
-
-    .search-icon {
-		background-color: #fff;
-		border-right:0;
-	}
+    padding-top: 20px;
+    .pdn-t7 {
+    	padding-top: 7px;
+    }
+    .search {
+    	width: 480px;
+    	@media (max-width: $pad-width) {
+			width: 300px;
+		}
+		@media (min-width: $pad-width) and (max-width: $pc-width) {
+			width: 400px;
+		}
+		@media (min-width: $pc-width) {
+			width: 480px;
+		}
+    	margin: auto;
+    }
 	.search-text{
 		border-left:0;
+		border-color: #D2D6D3;
+	    height: 32px;
+	    outline: none;
+	}
+	.search-btn {
+	    font-size: 16px;
+	    color: #999;
+	    border-color: $ax-gray;
+	    background-color: #FAFAFA;
+	    @media (max-width: $pad-width) {
+			padding: 0 15px;
+		}
+		@media (min-width: $pad-width) and (max-width: $pc-width) {
+			padding: 0 20px;
+		}
+		@media (min-width: $pc-width) {
+			padding: 0 25px;
+		}
 	}
 	.icon-bar{
 		display: block;
@@ -26,26 +63,108 @@
 	    border-radius: 1px;
 		background-color:#000;
 	}
+	.login {
+		a:hover	{
+			background: #fff;
+			color: $ax-green;
+		}
+	}
 }
-.navbar{
-	border-radius: 0px;
+.head-nav {
+	a {
+		padding: 0!important;
+		font-size: 16px;
+	}
+	.navbar-left {
+		.active {
+			color: $ax-green;
+			border-color: $ax-green;
+			background: #fff;
+		}
+		a {
+			display: block;
+			height: 40px;
+			text-align: center;
+    		line-height: 35px;
+    		border-top: 3px solid #fff;
+    		@media (max-width: $pad-width) {
+    			width: 80px;
+			}
+    		@media (min-width: $pad-width) and (max-width: $pc-width) {
+    			width: 100px;
+			}
+			@media (min-width: $pc-width) {
+				width: 120px;
+			}
+    		&:hover {
+    			color: $ax-green;
+    			border-color: $ax-green;
+    			background: #fff;
+    		}
+		}
+	}
+	.navbar-right {
+		a {
+			display: block;
+			width: 100px;
+			height: 32px;
+			text-align: center;
+    		line-height: 32px;
+    		background-color:#FAFAFA;
+    		border-radius: 2px;
+    		margin: 4px 0 0 10px;
+    		@media (max-width: $pad-width) {
+    			width: 80px;
+			}
+    		@media (min-width: $pad-width) and (max-width: $pc-width) {
+    			width: 90px;
+			}
+			@media (min-width: $pc-width) {
+				width: 100px;
+			}
+    		&:hover {
+    			color: #333;
+    		}
+		}
+	}
+}
+.hidden-nav {
+	a:hover {
+		color: $ax-green;
+	}
+}
+.lit-search {
+	padding: 0 15px 10px 15px;
+	.search-div {
+		border-left: 0;
+    	color: #999;
+	}
+}
+.user-box {
+	a {
+		display: block;
+	}
 }
 .slide{
 	img{
 		width:100%
 	}
 }
+.main-body {
+	background-color: $ax-body-gray;
+}
 .footer{
 	.box-top {
-		border-bottom: 1px solid $ax-gray;
+		border-bottom: $ax-bdr;
 		padding:50px 50px 30px 50px;
 	}
 	.box-middle {
-		border-bottom: 1px solid $ax-gray;
+		border-bottom: $ax-bdr;
 		padding-top: 30px;
 	}
 	.box-bottom {
 		padding-top: 15px;
+		padding-bottom: 20px;
 		text-align: center;
 		color:#999;
 	}
@@ -71,31 +190,32 @@
 	.qr-hidden {
 		display:none;
 	}
+	.hidden-nav {
+		
+	}
 }
-@media (max-width: $pad-width) {
-
-}
-@media (max-width: $pc-width) {
-
+@media (min-width: $phone-width) {
+	.hidden-nav {
+		display:none!important;
+	}
 }
 
 .icon-sprite {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-.icon-a{
+.icon-1{
     width: image-width(sprite-file($icons, 1));
     height: image-height(sprite-file($icons, 1));
     background-position: sprite-position($icons, 1);
 }
-.icon-b{
-	width: image-width(sprite-file($icons, 2));
+.icon-2{
+    width: image-width(sprite-file($icons, 2));
     height: image-height(sprite-file($icons, 2));
     background-position: sprite-position($icons, 2);
 }
-.icon-c{
-	width: image-width(sprite-file($icons, 3));
+.icon-3{
+    width: image-width(sprite-file($icons, 3));
     height: image-height(sprite-file($icons, 3));
     background-position: sprite-position($icons, 3);
 }
-

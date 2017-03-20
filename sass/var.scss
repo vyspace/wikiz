@@ -5,8 +5,16 @@ $pad-width: 992px;
 $pc-width: 1210px;
 
 //basic color
-$ax-gray:#D2D6D3;
+$ax-gray: #D2D6D3;
+$ax-green: #35A85B;
+$ax-body-gray: #F0F0F0;
 
 //basic icon
 $icons: sprite-map("icons/*.png", $spacing: 2px, $layout: horizontal, $icons-sprite-dimensions: true);
+
+//basic z-index
+$ax-index-tag: 999;
+
+//
+$ax-bdr: 1px solid $ax-gray;
 

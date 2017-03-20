@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 				src: ['plugin/*.js'],
 				dest: 'dest/plugin',
 				filter: 'isFile'
-			}
+			},
 			img: {
 				src: ['img/*.jpg', 'img/*.png'],
 				dest: 'dest/img',
@@ -57,7 +57,10 @@ module.exports = function(grunt) {
 					filter: 'isFile'
 				}]
 			}
-		}  
+		},
+		usemin: { 
+            html: ['dest/*.html']
+        }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
@@ -66,8 +69,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');	
+	grunt.loadNpmTasks('grunt-usemin');
 
 	grunt.registerTask('default', ['compass']);
-	grunt.registerTask('produce', ['clean', 'compass', 'cssmin', 'jshint', 'uglify', 'copy']);
+	grunt.registerTask('produce', ['clean', 'compass', 'cssmin', 'jshint', 'uglify', 'copy', 'usemin']);
 
 };

@@ -6,8 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="plugin/bootstrap.min.css">
+	<!-- build:css css/base.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<!-- endbuild -->
+	<!-- build:css css/index.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- endbuild -->
 	<!--[if lte IE 9]>
 	<script type="text/javascript" src="plugin/respond.min.js"></script>
 	<script type="text/javascript" src="plugin/html5shiv.min.js"></script>
@@ -28,15 +32,17 @@
 					</a>
 				</div>
 				<div class="collapse navbar-collapse">
-					<div class="col-md-7 col-sm-6">
-						<div class="input-group">
-						  <span class="input-group-addon search-icon">$</span>
-						  <input type="text" class="form-control search-text" aria-label="Amount (to the nearest dollar)">
-						  <span class="input-group-addon">搜词条</span>
+					<div class="col-md-7 col-sm-6 pdn-t7">
+						<div class="input-group search">
+							<span class="input-group-addon search-icon">
+								<div class="icon-sprite icon-3"></div>
+							</span>
+							<input type="text" class="form-control search-text" />
+							<span class="input-group-addon search-btn">搜词条</span>
 						</div>
 					</div>
 					<div class="col-md-2 col-sm-3">
-						<ul class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav navbar-right login">
 							<li><a href="#">登录</a></li>
 							<li><a href="#">注册</a></li>
 						</ul>
@@ -47,9 +53,9 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="nav navbar-nav">
-				<li role="presentation" class="active"><a href="#">风格派系</a></li>
+		<div class="collapse navbar-collapse head-nav">
+			<ul class="nav navbar-nav navbar-left">
+				<li role="presentation"><a class="active" href="#">风格派系</a></li>
 				<li role="presentation"><a href="#">历史大师</a></li>
 				<li role="presentation"><a href="#">装饰元素</a></li>
 				<li role="presentation"><a href="#">专业术语</a></li>
@@ -61,10 +67,25 @@
 				<li><a href="#">百科帮助</a></li>
 			</ul>
 		</div>
-		<div class="collapse navbar-collapsev" >
+		<div class="collapse navbar-collapse hidden-nav" aria-expanded="false" id="navbarCollapse">
 			<ul class="nav navbar-nav">
-				<li><a href="#">登录</a></li>
-				<li><a href="#">注册</a></li>
+				<li>
+					<div class="input-group lit-search" id="litSearchBar">
+						<span class="input-group-addon search-icon">
+							<div class="icon-sprite icon-3"></div>
+						</span>
+						<div class="form-control search-div">搜词条</div>
+					</div>
+				</li>
+				<li role="presentation"><a href="#">风格派系</a></li>
+				<li role="presentation"><a href="#">装饰元素</a></li>
+				<li role="presentation"><a href="#">专业术语</a></li>
+				<li role="presentation"><a href="#">家具名品</a></li>
+				<li role="presentation"><a href="#">机构</a></li>
+				<li role="presentation" class="user-box">
+					<a href="#" class="pull-left">登录</a>
+					<a href="#" class="pull-right">注册</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -88,48 +109,233 @@
 	</div>
 	<div class="main-body">
 		<ul class="category">
-			<li>推荐任务</li>
-			<li class="clearfix" >
-				<div class="" >
-					<div class="item mrgr">
-						<div>词条名称：</div>
+			<li class="title">推荐任务</li>
+			<li class="clearfix">
+				<div class="item-1 pdn-t30 mrgr-1">
+					<div class="entry-name">词条名称：</div>
+					<div class="entry-value">法国装饰艺术</div>
+					<div class="finish">
+						<span class="finish-name">完成度</span>
+						<span class="finish-value pull-right">30%</span>
 					</div>
-					<div class="item mrgr">
-						<div>词条名称：</div>
+					<div class="finish-strip">
+						<div class="finish-strip-value"></div>
 					</div>
-					<div class="item mrgr">
-						<div>词条名称：</div>
-					</div>
-					<div class="item mrgr">
-						<div>词条名称：</div>
-					</div>
-					<div class="item">
-						<div>词条名称：</div>
+					<div class="list"><span class="list-name">频道</span><span>风格排列</span></div>	
+					<div class="list"><span class="list-name">活动</span><span>双十一活动</span></div>
+					<div class="list"><span class="list-name">风格</span><span>法国装饰艺术</span></div>
+					<div>
+						<a class="btn btn-look" href="#" role="button">去看看</a>
 					</div>
 				</div>
-				<!-- <ol>
-					<li>词条名称：</li>
-					<li>法国装饰艺术</li>
-					<li>完成度</li>
-					<li></li>
-					<li>
-						<h7>频道</h7><h6>风格排序</h6>
+				<div class="item-1 mrgr-1">
+					<div class="entry-name">词条名称：</div>
+					<div class="entry-value">法国装饰艺术</div>
+					<div class="finish">
+						<span class="finish-name">完成度</span>
+						<span class="finish-value pull-right">30%</span>
 					</div>
-					<li>
-						<h7>活动</h7><h6>双十一活动</h6>
-					</li>
-					<li>
-						<h7>风格</h7><h6>法国装饰艺术</h6>
-					</li>
-					<li>
-						<a class="btn btn-success" href="#">去看看</a>
-					</li>
-				</ol> -->
+					<div class="finish-strip">
+						<div class="finish-strip-value"></div>
+					</div>
+					<div class="list"><span class="list-name">频道</span><span>风格排列</span></div>	
+					<div class="list"><span class="list-name">活动</span><span>双十一活动</span></div>
+					<div class="list"><span class="list-name">风格</span><span>法国装饰艺术</span></div>
+					<div>
+						<a class="btn btn-look" href="#" role="button">去看看</a>
+					</div>
+				</div>
+				<div class="item-1 mrgr-1">
+					<div class="entry-name">词条名称：</div>
+					<div class="entry-value">法国装饰艺术</div>
+					<div class="finish">
+						<span class="finish-name">完成度</span>
+						<span class="finish-value pull-right">30%</span>
+					</div>
+					<div class="finish-strip">
+						<div class="finish-strip-value"></div>
+					</div>
+					<div class="list"><span class="list-name">频道</span><span>风格排列</span></div>	
+					<div class="list"><span class="list-name">活动</span><span>双十一活动</span></div>
+					<div class="list"><span class="list-name">风格</span><span>法国装饰艺术</span></div>
+					<div>
+						<a class="btn btn-look" href="#" role="button">去看看</a>
+					</div>
+				</div>
+				<div class="item-1 mrgr-1">
+					<div class="entry-name">词条名称：</div>
+					<div class="entry-value">法国装饰艺术</div>
+					<div class="finish">
+						<span class="finish-name">完成度</span>
+						<span class="finish-value pull-right">30%</span>
+					</div>
+					<div class="finish-strip">
+						<div class="finish-strip-value"></div>
+					</div>
+					<div class="list"><span class="list-name">频道</span><span>风格排列</span></div>	
+					<div class="list"><span class="list-name">活动</span><span>双十一活动</span></div>
+					<div class="list"><span class="list-name">风格</span><span>法国装饰艺术</span></div>
+					<div>
+						<a class="btn btn-look" href="#" role="button">去看看</a>
+					</div>
+				</div>
+				<div class="item-1">
+					<div class="entry-name">词条名称：</div>
+					<div class="entry-value">法国装饰艺术</div>
+					<div class="finish">
+						<span class="finish-name">完成度</span>
+						<span class="finish-value pull-right">30%</span>
+					</div>
+					<div class="finish-strip">
+						<div class="finish-strip-value"></div>
+					</div>
+					<div class="list"><span class="list-name">频道</span><span>风格排列</span></div>	
+					<div class="list"><span class="list-name">活动</span><span>双十一活动</span></div>
+					<div class="list"><span class="list-name">风格</span><span>法国装饰艺术</span></div>
+					<div>
+						<a class="btn btn-look" href="#" role="button">去看看</a>
+					</div>
+				</div>
 			</li>
 		</ul>
-		<ul>
-			<li>推荐此条</li>
-			<li></li>
+		<ul class="category mgr-t20">
+			<li class="title">推荐此条</li>
+			<li class="clearfix mgr-b15">
+				<div class="item-2 mrgr-2">
+					<div class="card-1">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+					<div class="icon-sprite icon-1 tag-g"></div>
+				</div>
+				<div class="item-2 mrgr-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-2 mrgr-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-2 mrgr-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="clearfix">
+				<div class="item-2 mrgr-2">
+					<div class="card-1">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+					<div class="icon-sprite icon-2 tag-g"></div>
+				</div>
+				<div class="item-2 mrgr-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-2 mrgr-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-2 mrgr-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-2">
+					<div class="card-2">
+						<div class="proof"></div>
+						<div class="explain">
+							<div class="name">卡蒙折叠椅</div>
+							<div class="labels clearfix">
+								<div>古埃及</div>
+								<div>古典风格</div>
+								<div>图坦</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div class="footer">
@@ -211,7 +417,19 @@
 
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		(function($, undefined){
+			"use strict"
+			var navBtn = $("#navBtn"),
+				navbarCollapse = $("#navbarCollapse");
+			navBtn.on("click", function() {
+				navbarCollapse.toggle();
+			})
+		})(jQuery);
+	</script>
+	<!-- build:js js/index.min.js -->
 	<script type="text/javascript" src="js/index.js"></script>
+	<!-- endbuild -->
 </body>
 </html>
 
