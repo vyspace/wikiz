@@ -10,6 +10,11 @@
 a {
 	color: #333;
 }
+.no-style {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 .search-icon {
 	background-color: #fff;
 	border-right:0;
@@ -145,13 +150,155 @@ a {
 		display: block;
 	}
 }
-.slide{
-	img{
-		width:100%
-	}
-}
 .main-body {
 	background-color: $ax-body-gray;
+	.category {
+		margin: auto;
+		padding: 0;
+	}
+	.item-teletext {
+    	width: 224px;
+    	height: 300px;
+    	float: left;
+    	position: relative;
+    	.card-1 {
+    		width: 220px;
+    		height: 100%;
+    		background-color: #fff;
+    		float: right;
+    	}
+    	.card-2 {
+    		height: 100%;
+    		background-color: #fff;
+    	}
+    	.proof {
+    		height: 220px;
+    		background: url(../img/index-pro.jpg) no-repeat;
+    		background-position: center;
+    		border-bottom: $ax-bdr;
+    	}
+    	.explain {
+    		padding: 10px 20px 0px 20px
+    	}
+    	.tag-g {
+    		position: absolute;
+    		top: 10px;
+    	}
+    	.name {
+    		font-size: 16px;
+    	}
+    	.labels {
+    		div {
+    			float :left;
+    			font-sieze: 14px;
+    			color: #999;
+    			border: $ax-bdr;
+    			padding: 2px 4px;
+    			border-radius: 2px;
+    			margin: 5px 5px 5px 0;
+    		}
+    	}
+    }
+    @media (max-width: $phone-width) {
+	    .mrgr-teletext {
+	    	margin-right: 10px;
+	    	margin-bottom: 10px;
+	    }
+	}
+	@media (min-width: $phone-width) {
+	    .mrgr-teletext {
+	    	margin-right: 15px;
+	    	margin-bottom: 15px;
+	    }
+	}
+	.ey-basic-info {
+		font-size: 16px;
+		.title {
+			font-size: 32px;
+		}
+		.edit-box {
+			font-size: 14px;
+		}
+		.edit {
+			color: #999;
+		}
+	}
+}
+.mb-1 {
+	padding: 15px 0;
+	.mb-box {
+		padding: 30px;
+		background-color: #fff;
+		margin-bottom: 15px;
+		.title {
+		    color: $ax-green;
+		    font-size: 24px;
+		    border-bottom: $ax-bdr;
+		    margin-bottom: 15px;
+		}
+	}
+	.nav-sc {
+		margin: 0 auto 8px auto;
+		a {
+			position: relative;
+		    display: block;
+		    color: #999;
+		    font-size: 16px;
+		    padding: 1px 16px;
+		    border-radius: 2px;
+		    word-break: keep-all;
+		}
+		.active {
+			a{
+				background-color: $ax-green;
+				color: #fff;
+				&:focus {
+					background-color: $ax-green;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.sc-w1{
+		max-width: 130px;
+	}
+	.sc-w2 {
+		max-width: 483px
+	}
+	.sc-w3 {
+		max-width: 196px;
+	}
+	.sc-w4 {
+		max-width: 294px;
+	}
+	.sc-w5 {
+	    max-width: 586px;
+	}
+	.headline {
+		font-size: 24px;
+		padding-bottom: 20px;
+	}
+	dl {
+		padding-left: 24px;
+	}
+	dt {
+		font-size: 18px;
+		font-weight: 400;
+		padding-bottom: 15px;
+	}
+	dd {
+		font-size: 16px;
+		padding-left: 54px;
+		padding-bottom: 15px;
+		a {
+			word-break: keep-all;
+			padding-bottom: 6px;
+			text-decoration: underline;
+			&:hover {
+				color: $ax-green;
+			}
+		}
+	}
 }
 .footer{
 	.box-top {
@@ -204,18 +351,13 @@ a {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-.icon-1{
-    width: image-width(sprite-file($icons, 1));
-    height: image-height(sprite-file($icons, 1));
-    background-position: sprite-position($icons, 1);
+$iconNumber: 6;
+@for $i from 1 through $iconNumber { 
+	.icon-#{$i}{
+	    width: image-width(sprite-file($icons, $i));
+	    height: image-height(sprite-file($icons, $i));
+	    background-position: sprite-position($icons, $i);
+	}
 }
-.icon-2{
-    width: image-width(sprite-file($icons, 2));
-    height: image-height(sprite-file($icons, 2));
-    background-position: sprite-position($icons, 2);
-}
-.icon-3{
-    width: image-width(sprite-file($icons, 3));
-    height: image-height(sprite-file($icons, 3));
-    background-position: sprite-position($icons, 3);
-}
+
+

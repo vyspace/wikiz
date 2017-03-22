@@ -1,16 +1,37 @@
 @import "compass/css3";
 @import 'var.scss';
+.slide{
+    img{
+        width:100%
+    }
+    .carousel-indicators {
+        li {
+            width: 8px;
+            height: 8px;
+            margin: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #000\9;
+            background-color: rgba(0,0,0,0);
+            border: 1px solid #fff;
+            border-radius: 8px;
+        }
+        .active {
+            width: 16px;
+            height: 8px;
+            margin-bottom: 1px;
+            background-color: #fff;
+        }
+    }
+}
 .main-body {
 	padding-top: 30px;
 	padding-bottom: 70px;
 	ul {
 		list-style: none;
-	}
+	} 
 }
 .category {
-	max-width: $ax-width;
-	margin: auto;
-	padding: 0;
 	.title {
 		color: $ax-green;
 		font-size: 24px;
@@ -79,49 +100,6 @@
     		}
     	}
     }
-    .item-2 {
-    	width: 224px;
-    	height: 300px;
-    	float: left;
-    	position: relative;
-    	.card-1 {
-    		width: 220px;
-    		height: 100%;
-    		background-color: #fff;
-    		float: right;
-    	}
-    	.card-2 {
-    		height: 100%;
-    		background-color: #fff;
-    	}
-    	.proof {
-    		height: 220px;
-    		background: url(../img/index-pro.jpg) no-repeat;
-    		background-position: center;
-    		border-bottom: $ax-bdr;
-    	}
-    	.explain {
-    		padding: 10px 20px 0px 20px
-    	}
-    	.tag-g {
-    		position: absolute;
-    		top: 10px;
-    	}
-    	.name {
-    		font-size: 16px;
-    	}
-    	.labels {
-    		div {
-    			float :left;
-    			font-sieze: 14px;
-    			color: #999;
-    			border: $ax-bdr;
-    			padding: 2px 4px;
-    			border-radius: 2px;
-    			margin: 5px 5px 5px 0;
-    		}
-    	}
-    }
     .mgr-b15 {
     	margin-bottom: 15px;
     }
@@ -134,21 +112,12 @@
     	margin-right: 10px;
     	margin-bottom: 10px;
     }
-    .mrgr-2 {
-    	margin-right: 10px;
-    	margin-bottom: 10px;
-    }
 }
 @media (min-width: $phone-width) {
 	.mrgr-1 {
     	margin-right: 20px;
     	margin-bottom: 20px;
-    }
-    .mrgr-2 {
-    	margin-right: 15px;
-    	margin-bottom: 15px;
-    }
-    
+    } 
 }
 @media all and (-webkit-min-device-pixel-ratio:0){
 	.justify-range {
