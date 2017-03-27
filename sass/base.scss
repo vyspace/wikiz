@@ -199,6 +199,19 @@ a {
     		}
     	}
     }
+    .edit-btn {
+		color: $ax-green;
+		position: relative;
+		padding-left: 18px;
+	    font-size: 14px;
+	    font-weight: 400;
+	    cursor: pointer;
+		i {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
     @media (max-width: $phone-width) {
 	    .mrgr-teletext {
 	    	margin-right: 10px;
@@ -210,18 +223,6 @@ a {
 	    	margin-right: 15px;
 	    	margin-bottom: 15px;
 	    }
-	}
-	.ey-basic-info {
-		font-size: 16px;
-		.title {
-			font-size: 32px;
-		}
-		.edit-box {
-			font-size: 14px;
-		}
-		.edit {
-			color: #999;
-		}
 	}
 }
 .mb-1 {
@@ -300,6 +301,165 @@ a {
 		}
 	}
 }
+.mb-2 {
+	padding: 25px 0 15px 0;
+	.breadcrum {
+		padding-bottom: 10px;
+	}
+	.com-title {
+		border-bottom: $ax-bdr;
+		margin-bottom: 15px;
+		.title {
+			font-size: 18px;
+			color: #999;
+			padding-right: 20px;
+		}
+	}
+	.box {
+		padding: 20px;
+		background-color: #fff;
+		margin-bottom: 15px;
+	}
+	.ey-basic-info {
+		background-color: #fff;
+		margin-bottom: 15px;
+		padding: 20px 30px 15px 30px;
+		font-size: 16px;
+		.info-title {
+			border-bottom: $ax-bdr;
+			padding-bottom: 8px;
+		}
+		.title {
+			font-size: 32px;
+		}
+		.edit-box {
+			font-size: 14px;
+			padding-top: 22px;
+		}
+		.edit {
+			color: #999;
+			padding-right:10px;
+		}
+		.tag-box {
+			padding-top: 17px;
+		}
+		.tags {
+		    color: #fff;
+		    font-size: 14px;
+		    border-radius: 2px;
+		    position: relative;
+		    i {
+		    	position: absolute;
+			    left: 8px;
+			    top: 2px;
+		    }
+		}
+		.tag-1 {
+			background-color: #B4CC3D;
+			padding: 2px 10px 2px 28px;
+		}
+		.tag-2 {
+			background-color: #49A6FF;
+			padding: 2px 10px 2px 28px;
+		}
+		.tag-3 {
+			background-color: #F2BA49;
+			padding: 2px 10px 2px 24px;
+		}
+		.ed-info {
+			font-size: 14px;
+			padding: 0;
+			padding-top: 20px;
+			a {
+				text-decoration: underline;
+				&:hover {
+					color: $ax-green;
+				}
+			}
+		}
+		.icon-texs {
+			padding-left: 0;
+			padding-top: 18px;
+		}
+		.icon-tex {
+			position: relative;
+			padding-left: 18px;
+		    float: right;
+		    margin-left: 30px;
+		    i {
+		    	position: absolute;
+		    	left: 0;
+		    	top: 4px;
+		    }
+		}
+		.info-detail {
+			padding-top: 15px;
+			dt {
+				border-bottom: $ax-bdr;
+				margin-bottom: 15px;
+			}
+			.mgr-b25 {
+				margin-bottom: 25px;
+			}
+			a {
+				text-decoration: underline;
+				&:hover {
+					color: $ax-green;
+				}
+			}
+			.more {
+				color: $ax-green;
+			}
+		}
+		.dt-title {
+			font-size: 18px;
+			color: #999;
+			padding-right: 25px;
+		}
+		.basic-table {
+			width: 100%;
+			td {
+				padding-left: 20px;
+				padding-bottom: 10px;
+			}
+		}
+		.bd-r {
+			border-right: $ax-bdr;
+		}
+		.x-table {
+			width: 100%;
+			border-top: $ax-bdr;
+			border-left: $ax-bdr;
+			td {
+				border-right: $ax-bdr;
+				border-bottom: $ax-bdr;
+				text-align: center;
+			}
+		}
+	}
+	.ey-history {
+		dl {
+			margin-bottom: 0;
+		}
+		dt {
+			margin-bottom: 8px;
+		}
+		.mgr-b20 {
+			padding-bottom: 20px;
+		}
+	}
+	.ey-piclist {
+		.piclist {
+			border-left: $ax-bdr;
+		}
+		.pic-item {
+			border-bottom: $ax-bdr;
+			border-right: $ax-bdr;
+			border-top: $ax-bdr;
+			width: 220px;
+		}
+	}
+}
 .footer{
 	.box-top {
 		border-bottom: $ax-bdr;
@@ -351,7 +511,7 @@ a {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-$iconNumber: 6;
+$iconNumber: 13;
 @for $i from 1 through $iconNumber { 
 	.icon-#{$i}{
 	    width: image-width(sprite-file($icons, $i));
