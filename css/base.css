@@ -175,6 +175,15 @@ a {
   display: block;
 }
 
+.btn-green {
+  padding: 3px 30px;
+  border-radius: 15px;
+  background-color: #35A85B;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+}
+
 .main-body {
   background-color: #F0F0F0;
 }
@@ -203,6 +212,12 @@ a {
   background: url(../img/index-pro.jpg) no-repeat;
   background-position: center;
   border-bottom: 1px solid #D2D6D3;
+}
+.main-body .item-teletext .proof .del {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  cursor: pointer;
 }
 .main-body .item-teletext .explain {
   padding: 10px 20px 0px 20px;
@@ -235,6 +250,44 @@ a {
   position: absolute;
   left: 0;
   top: 0;
+}
+.main-body .btn-green-frame {
+  padding: 3px 50px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #D2D6D3;
+  border-color: #35A85B;
+  color: #35A85B;
+  font-size: 16px;
+  font-weight: 200;
+}
+.main-body .pulldown button {
+  padding: 2px 10px;
+  width: 120px;
+  border-radius: 2px;
+}
+.main-body .pulldown a {
+  text-decoration: none !important;
+}
+.main-body .pulldown a:hover {
+  background-color: #FAFAFA;
+}
+.main-body .pulldown .mgr-t8 {
+  margin-top: 8px;
+}
+.main-body .btn-def {
+  background-color: #fff;
+  border: 1px solid #D2D6D3;
+}
+.main-body .btn-def:focus {
+  background-color: #fff;
+}
+.main-body .tex-def {
+  width: 120px;
+  height: 26px;
+  border-radius: 2px;
+  border: 1px solid #D2D6D3;
+  padding: 2px 10px;
 }
 @media (max-width: 768px) {
   .main-body .mrgr-teletext {
@@ -352,16 +405,25 @@ a {
 .mb-2 .ex-table td {
   border-right: 1px solid #D2D6D3;
   border-bottom: 1px solid #D2D6D3;
+  padding: 2px 0;
 }
 .mb-2 .ey-basic-info {
   background-color: #fff;
   margin-bottom: 15px;
-  padding: 20px 30px 15px 30px;
   font-size: 16px;
 }
-.mb-2 .ey-basic-info .info-title {
+.mb-2 .ey-basic-info .info-title-box {
+  padding: 20px 30px 0 30px;
+}
+.mb-2 .ey-basic-info .info-title-color {
+  background-color: #EAF6EE;
+}
+.mb-2 .ey-basic-info .info-title1 {
   border-bottom: 1px solid #D2D6D3;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+}
+.mb-2 .ey-basic-info .info-title2 {
+  padding-bottom: 12px;
 }
 .mb-2 .ey-basic-info .title {
   font-size: 32px;
@@ -370,9 +432,23 @@ a {
   font-size: 14px;
   padding-top: 22px;
 }
+.mb-2 .ey-basic-info .edit-box1 {
+  font-size: 14px;
+  padding-top: 8px;
+}
+.mb-2 .ey-basic-info .edit-box1 .edit-desc {
+  padding-top: 12px;
+}
+.mb-2 .ey-basic-info .edit-tip {
+  color: #999;
+  padding-right: 20px;
+}
 .mb-2 .ey-basic-info .edit {
   color: #999;
   padding-right: 10px;
+}
+.mb-2 .ey-basic-info .edit-time {
+  color: #FF6A4C;
 }
 .mb-2 .ey-basic-info .tag-box {
   padding-top: 17px;
@@ -431,8 +507,24 @@ a {
   left: 0;
   top: 4px;
 }
+.mb-2 .ey-basic-info .save-time {
+  border-left: 1px solid #D2D6D3;
+  border-right: 1px solid #D2D6D3;
+}
+.mb-2 .ey-basic-info .save-time .name {
+  font-size: 14px;
+  color: #999;
+}
 .mb-2 .ey-basic-info .info-detail {
-  padding-top: 15px;
+  padding: 15px 30px;
+}
+.mb-2 .ey-basic-info .info-detail .main-graph {
+  position: relative;
+}
+.mb-2 .ey-basic-info .info-detail .main-graph .btn-box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .mb-2 .ey-basic-info .info-detail dt {
   border-bottom: 1px solid #D2D6D3;
@@ -467,6 +559,17 @@ a {
 }
 .mb-2 .ey-basic-info .x-table td {
   text-align: center;
+  position: relative;
+  padding: 2px 0;
+}
+.mb-2 .ey-basic-info .x-table .add {
+  color: #35A85B;
+}
+.mb-2 .ey-basic-info .x-table .del {
+  position: absolute;
+  right: 9px;
+  top: 5px;
+  cursor: pointer;
 }
 .mb-2 .ey-history dl {
   margin-bottom: 0;
@@ -474,8 +577,28 @@ a {
 .mb-2 .ey-history dt {
   margin-bottom: 8px;
 }
+.mb-2 .ey-history .title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.mb-2 .ey-history textarea {
+  font-size: 16px;
+}
 .mb-2 .ey-history .mgr-b20 {
   padding-bottom: 20px;
+}
+.mb-2 .ey-history .mgr-b10 {
+  padding-bottom: 10px;
+}
+.mb-2 .ey-history .wn-tip {
+  font-size: 16px;
+  color: #999;
+}
+.mb-2 .ey-history .wn {
+  color: #333;
+}
+.mb-2 .ey-history .mgr-r20 {
+  margin-right: 20px;
 }
 .mb-2 .ey-piclist .piclist {
   border-left: 1px solid #D2D6D3;
@@ -507,6 +630,17 @@ a {
 }
 .mb-2 .ey-piclist .ex-cont .mgr-b15 {
   margin-bottom: 15px;
+}
+.mb-2 .ey-piclist .tex-cm {
+  text-align: center;
+  line-height: 300px;
+  overflow: hidden;
+  font-size: 16px;
+  cursor: pointer;
+  color: #35A85B;
+}
+.mb-2 .ey-piclist .add {
+  color: #35A85B;
 }
 .mb-2 .ey-recommend {
   background-color: #F0F0F0;
@@ -586,14 +720,6 @@ a {
 .mb-2 .ey-tabs .tab-content a:hover {
   color: #35A85B;
 }
-.mb-2 .ey-tabs .tab-content .btn-green {
-  padding: 3px 30px;
-  border-radius: 15px;
-  background-color: #35A85B;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 200;
-}
 .mb-2 .ey-tabs .tab-content .mgr-b12 {
   margin-bottom: 12px;
 }
@@ -672,7 +798,7 @@ a {
   }
 }
 .icon-sprite {
-  background-image: url('../img/icons-s4946346ece.png');
+  background-image: url('../img/icons-s1da70445e8.png');
   background-repeat: no-repeat;
 }
 
@@ -685,49 +811,49 @@ a {
 .icon-2 {
   width: 50px;
   height: 56px;
-  background-position: -182px 0;
+  background-position: -236px 0;
 }
 
 .icon-3 {
   width: 18px;
   height: 18px;
-  background-position: -234px 0;
+  background-position: -306px 0;
 }
 
 .icon-4 {
   width: 63px;
   height: 64px;
-  background-position: -254px 0;
+  background-position: -326px 0;
 }
 
 .icon-5 {
   width: 52px;
   height: 64px;
-  background-position: -319px 0;
+  background-position: -391px 0;
 }
 
 .icon-6 {
   width: 65px;
   height: 64px;
-  background-position: -373px 0;
+  background-position: -445px 0;
 }
 
 .icon-7 {
   width: 13px;
   height: 16px;
-  background-position: -440px 0;
+  background-position: -512px 0;
 }
 
 .icon-8 {
   width: 16px;
   height: 16px;
-  background-position: -455px 0;
+  background-position: -527px 0;
 }
 
 .icon-9 {
   width: 10px;
   height: 16px;
-  background-position: -473px 0;
+  background-position: -545px 0;
 }
 
 .icon-10 {
@@ -770,4 +896,28 @@ a {
   width: 18px;
   height: 18px;
   background-position: -162px 0;
+}
+
+.icon-17 {
+  width: 16px;
+  height: 15px;
+  background-position: -182px 0;
+}
+
+.icon-18 {
+  width: 16px;
+  height: 16px;
+  background-position: -200px 0;
+}
+
+.icon-19 {
+  width: 16px;
+  height: 16px;
+  background-position: -218px 0;
+}
+
+.icon-20 {
+  width: 16px;
+  height: 16px;
+  background-position: -288px 0;
 }
