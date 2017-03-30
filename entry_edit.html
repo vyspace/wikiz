@@ -251,7 +251,10 @@
 						<dd class="mgr-b15">
 							<table class="ex-table">
 								<tr>
-									<td><a href="#">词条</a></td><td><a href="#">词条</a></td><td><a href="#">词条</a></td><td><a class="add" href="#">添加</a></td>
+									<td><a href="javascript:void(0);" data-toggle="modal" data-target="#citeSource1">词条</a></td><td><a href="javascript:void(0);" data-toggle="modal" data-target="#citeSource2">词条</a></td><td><a href="javascript:void(0);" data-toggle="modal" data-target="#citeSource3">词条</a></td><td><a class="add" href="javascript:void(0);" data-toggle="modal" data-target="#uploadImg">添加</a></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0);" data-toggle="modal" data-target="#citeCard1">词条</a></td><td><a href="javascript:void(0);" data-toggle="modal" data-target="#citeSource2">词条</a></td><td><a href="javascript:void(0);" data-toggle="modal" data-target="#citeSource3">词条</a></td><td><a class="add" href="javascript:void(0);" data-toggle="modal" data-target="#uploadImg">添加</a></td>
 								</tr>
 							</table>
 						</dd>
@@ -328,32 +331,455 @@
 			</div>
 		</div>
 	</div>
-	
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">LaunchModal</button>
-	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+	<div class="modal fade bs-example-modal-lg" id="citeSource1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div>您正在为“对家居外形更多的使用自由流畅的曲线。摄政风格是路易十五风格的前奏，是洛可可风格的早期形式”增加引用资料</div>
-					<div>请注意！引用资料无法为您自动保存草稿，请完成后点击保存。</div>
-					<div>
-						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-						<button type="submit" class="btn btn-default">Send invitation</button>
+			<div class="modal-content mo-box mo-ver1">
+				<div class="mo-header">
+					<div class="tip-1"><span>您正在为</span>“对家居外形更多的使用自由流畅的曲线。摄政风格是路易十五风格的前奏，是洛可可风格的早期形式”<span>增加引用资料</span></div>
+					<div class="tip-2">
+						<span><i class="icon-sprite icon-21"></i>请注意！引用资料无法为您自动保存草稿，请完成后点击保存。</span>
+					</div>
+					<div class="search-group">
+						<div class="search-box">
+							<input type="text" class="form-control search-bar" id="" placeholder="搜索关键字或“百科资料编号”" />
+						</div>
+						<button type="button" class="btn search-btn">
+							<i class="icon-sprite icon-22"></i>搜索
+						</button>
 						<a href="#">如何提高效率？</a>
 					</div>
-					
 				</div>
-				<div class="modal-body">
-				...
+				<div class="mo-body">
+					<div class="title">最近引用</div>
+					<div class="row">
+						<div class="col-md-6">
+							<table class="bd-table q-table">
+								<col width="33.4%" />
+								<col width="33.3%" />
+								<col width="33.3%" />
+								<tr>
+									<td><a href="#">《中国家具史》</a></td>
+									<td><a href="#">《西方家具集成：一部风格、品牌、设计的历史》</a></td>
+									<td><a href="#">《家具史：公元前3000-2000年》</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">《Sylvie Chadenet: French Furniture: From Louis XIII to Art Deco》</a></td>
+									<td><a href="#">《家具设计》</a></td>
+									<td><a href="#">《家具设计分析与应用》</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">《家具结构设计与制造工艺 》</a></td>
+									<td><a href="#">《工业设计系列教程：现代家具设计 》</a></td>
+									<td><a href="#">《室内～家具设计》</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">《中国传统家具木工图谱》</a></td>
+									<td><a href="#">《布艺与家具设计指南》</a></td>
+									<td><a href="#">《Furniture Design Now》</a></td>
+								</tr>
+							</table>
+							<div class="page-btn">
+								<input type="button" class="btn btn-green-frame mgr-r16" value="上一页" />
+								<input type="button" class="btn btn-green-frame" value="下一页" />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="book-name">著作名：《中国家具史》</div>
+							<div class="book-info">类型：中文著作&nbsp;|&nbsp;作者：xxxxxx</div>
+							<div class="row mgr-b9">
+								<div class="col-md-6 col-sm-6 col-xs-6 clearfix">
+									<div class="specimen pull-right">
+										<img src="img/cover.jpg" alt="" />
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<div class="add-spe">
+										<div>添加</div>
+									</div>
+								</div>
+							</div>
+							<div class="q-num">引用第<input type="text" class="form-control page-num">页</div>
+						</div>
+					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-green">保存</button>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green mgr-r16">保存</button>
 					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="modal fade bs-example-modal-lg" id="citeSource2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content mo-box mo-ver1">
+				<div class="mo-header">
+					<div class="tip-1"><span>您正在为</span>“对家居外形更多的使用自由流畅的曲线。摄政风格是路易十五风格的前奏，是洛可可风格的早期形式”<span>增加引用资料</span></div>
+					<div class="tip-2">
+						<span><i class="icon-sprite icon-21"></i>请注意！引用资料无法为您自动保存草稿，请完成后点击保存。</span>
+					</div>
+					<div class="search-group">
+						<div class="search-box">
+							<input type="text" class="form-control search-bar" id="" placeholder="搜索关键字或“百科资料编号”" />
+							<ul class="no-style search-results">
+								<li><span>中国</span>家居历史</li>
+								<li><span>中国</span>历史</li>
+								<li>从<span>中国</span>到美国</li>
+								<li>崛起的<span>中国</span></li>
+							</ul>
+						</div>
+						<button type="button" class="btn search-btn">
+							<i class="icon-sprite icon-22"></i>搜索
+						</button>
+						<a href="#">如何提高效率？</a>
+					</div>
+				</div>
+				<div class="mo-body">
+					<div class="title">最近引用</div>
+					<div class="row">
+						<div class="col-md-6">
+							<table class="bd-table q-table">
+								<col width="33.4%" />
+								<col width="33.3%" />
+								<col width="33.3%" />
+								<tr>
+									<td><a href="#">《中国家具史》</a></td>
+									<td><a href="#">《西方家具集成：一部风格、品牌、设计的历史》</a></td>
+									<td><a href="#">《家具史：公元前3000-2000年》</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">《Sylvie Chadenet: French Furniture: From Louis XIII to Art Deco》</a></td>
+									<td><a href="#">《家具设计》</a></td>
+									<td><a href="#">《家具设计分析与应用》</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">《家具结构设计与制造工艺 》</a></td>
+									<td><a href="#">《工业设计系列教程：现代家具设计 》</a></td>
+									<td><a href="#">《室内～家具设计》</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">《中国传统家具木工图谱》</a></td>
+									<td><a href="#">《布艺与家具设计指南》</a></td>
+									<td><a href="#">《Furniture Design Now》</a></td>
+								</tr>
+							</table>
+							<div class="page-btn">
+								<input type="button" class="btn btn-green-frame mgr-r16" value="上一页" />
+								<input type="button" class="btn btn-green-frame" value="下一页" />
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="pre-quote">请先确定引用资料</div>
+						</div>
+					</div>
+				</div>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green mgr-r16">保存</button>
+					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="citeSource3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content mo-box mo-ver1">
+				<div class="mo-header">
+					<div class="tip-1"><span>您正在为</span>“对家居外形更多的使用自由流畅的曲线。摄政风格是路易十五风格的前奏，是洛可可风格的早期形式”<span>增加引用资料</span></div>
+					<div class="tip-2">
+						<span><i class="icon-sprite icon-21"></i>请注意！引用资料无法为您自动保存草稿，请完成后点击保存。</span>
+					</div>
+					<div class="search-group">
+						<div class="search-box">
+							<input type="text" class="form-control search-bar" id="" placeholder="搜索关键字或“百科资料编号”" />
+						</div>
+						<button type="button" class="btn search-btn">
+							<i class="icon-sprite icon-22"></i>搜索
+						</button>
+						<a href="#">如何提高效率？</a>
+					</div>
+				</div>
+				<div class="mo-body">
+					<ul class="nav nav-tabs tab-def" role="tablist">
+					    <li role="presentation"><a href="#newQuote" aria-controls="newQuote" role="tab" data-toggle="tab">最新引用</a></li>
+					    <li role="presentation" class="active"><a href="#searchResult" aria-controls="searchResult" role="tab" data-toggle="tab">搜索结果</a></li>
+					    <li role="presentation"><a href="#newBuilt" aria-controls="newBuilt" role="tab" data-toggle="tab">新建</a></li>
+					</ul>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="tab-content">
+							    <div role="tabpanel" class="tab-pane" id="newQuote">
+									<table class="bd-table q-table">
+										<col width="33.4%" />
+										<col width="33.3%" />
+										<col width="33.3%" />
+										<tr>
+											<td><a href="#">《中国家具史》</a></td>
+											<td><a href="#">《西方家具集成：一部风格、品牌、设计的历史》</a></td>
+											<td><a href="#">《家具史：公元前3000-2000年》</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">《Sylvie Chadenet: French Furniture: From Louis XIII to Art Deco》</a></td>
+											<td><a href="#">《家具设计》</a></td>
+											<td><a href="#">《家具设计分析与应用》</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">《家具结构设计与制造工艺 》</a></td>
+											<td><a href="#">《工业设计系列教程：现代家具设计 》</a></td>
+											<td><a href="#">《室内～家具设计》</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">《中国传统家具木工图谱》</a></td>
+											<td><a href="#">《布艺与家具设计指南》</a></td>
+											<td><a href="#">《Furniture Design Now》</a></td>
+										</tr>
+									</table>
+									<div class="page-btn">
+										<input type="button" class="btn btn-green-frame mgr-r16" value="上一页" />
+										<input type="button" class="btn btn-green-frame" value="下一页" />
+									</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane active" id="searchResult">
+									<table class="bd-table r-table">
+										<col width="33.4%" />
+										<col width="33.3%" />
+										<col width="33.3%" />
+										<tr class="tr-1">
+											<td>书名/期刊名/域名</td>
+											<td>
+												<div class="dropdown">
+													<button id="sourceType" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    资料类型<span class="caret"></span></button>
+													<ul class="dropdown-menu drop-box" aria-labelledby="sourceType">
+														<li>类型1</li>
+														<li>类型2</li>
+														<li>类型3</li>
+													</ul>
+												</div>
+											</td>
+											<td>基本信息</td>
+										</tr>
+										<tr>
+											<td>中国家具史</td>
+											<td>中文著作</td>
+											<td><div>xxx编辑</div><div>xxx出版社</div></td>
+										</tr>
+										<tr>
+											<td>中国家具史</td>
+											<td>中文著作</td>
+											<td><div>xxx编辑</div><div>xxx出版社</div></td>
+										</tr>
+										<tr>
+											<td>中国家具史</td>
+											<td>中文著作</td>
+											<td><div>xxx编辑</div><div>xxx出版社</div></td>
+										</tr>
+										<tr>
+											<td>中国家具史</td>
+											<td>中文著作</td>
+											<td><div>xxx编辑</div><div>xxx出版社</div></td>
+										</tr>
+									</table>
+									<div class="page-btn">
+										<input type="button" class="btn btn-green-frame mgr-r16" value="上一页" />
+										<input type="button" class="btn btn-green-frame" value="下一页" />
+									</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane" id="newBuilt">
+							    	<table class="n-table">
+							    		<col width="30%" />
+										<col width="70%" />
+							    		<tr>
+							    			<td>类型</td>
+							    			<td>
+							    				<div class="dropdown">
+													<button class="in-box clearfix" id="chooseSource" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="pull-left">中文资料</span>
+												    <span class="caret mgr-t8 pull-right"></span></button>
+													<ul class="dropdown-menu drop-box" aria-labelledby="chooseSource">
+														<li>资料 1</li>
+														<li>资料 2</li>
+														<li>资料 3</li>
+													</ul>
+												</div>
+							    			</td>
+							    		</tr>
+							    		<tr>
+							    			<td>著作名称</td>
+							    			<td><input type="text" class="form-control in-box" placeholder="请输入"></td>
+							    		</tr>
+							    		<tr>
+							    			<td>作者</td>
+							    			<td><input type="text" class="form-control in-box" placeholder="请输入"></td>
+							    		</tr>
+							    		<tr>
+							    			<td>出版社</td>
+							    			<td><input type="text" class="form-control in-box" placeholder="请输入"></td>
+							    		</tr>
+							    		<tr>
+							    			<td>出版时间</td>
+							    			<td><input type="text" class="form-control in-box" placeholder="请输入"></td>
+							    		</tr>
+							    	</table>
+							    </div>
+							</div>
+
+							
+						</div>
+						<div class="col-md-6">
+							<div class="pre-quote">请先确定引用资料</div>
+						</div>
+					</div>
+				</div>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green mgr-r16">保存</button>
+					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="uploadImg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content mo-box mo-ver2">
+				<div class="mo-header">
+					<div class="title">添加图片</div>
+					<div><input type="file" class="form-control file" placeholder="请输入图片链接"></div>	
+				</div>
+				<div class="mo-body">
+					<div class="photo"></div>
+				</div>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green mgr-r16">保存</button>
+					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="citeCard1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content mo-box mo-ver1">
+				<div class="mo-header">
+					<div class="search-group">
+						<div class="search-box">
+							<input type="text" class="form-control search-bar" id="" placeholder="搜索关键字或“百科资料编号”" />
+						</div>
+						<button type="button" class="btn search-btn">
+							<i class="icon-sprite icon-22"></i>搜索
+						</button>
+						<a href="#">如何提高效率？</a>
+					</div>
+				</div>
+				<div class="mo-body">
+					<div class="title">历史搜索</div>
+					<div class="row">
+						<div class="col-md-6">
+							<table class="bd-table s-table">
+								<col width="33.4%" />
+								<col width="33.3%" />
+								<col width="33.3%" />
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-md-6">
+							<div class="pre-quote">请先确定引用资料</div>
+						</div>
+					</div>
+				</div>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green mgr-r16">保存</button>
+					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="citeCard2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content mo-box mo-ver1">
+				<div class="mo-header">
+					<div class="search-group">
+						<div class="search-box">
+							<input type="text" class="form-control search-bar" id="" placeholder="搜索关键字或“百科资料编号”" />
+						</div>
+						<button type="button" class="btn search-btn">
+							<i class="icon-sprite icon-22"></i>搜索
+						</button>
+						<a href="#">如何提高效率？</a>
+					</div>
+				</div>
+				<div class="mo-body">
+					<div class="title">历史搜索</div>
+					<div class="row">
+						<div class="col-md-6">
+							<table class="bd-table s-table">
+								<col width="33.4%" />
+								<col width="33.3%" />
+								<col width="33.3%" />
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+									<td><a href="#">词条xxx</a></td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-md-6">
+							<div class="pre-quote">请先确定引用资料</div>
+						</div>
+					</div>
+				</div>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green mgr-r16">保存</button>
+					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
 </body>

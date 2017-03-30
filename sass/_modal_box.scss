@@ -1,3 +1,285 @@
-.mo_box {
-	
+.mo-box {
+	padding: 20px 30px;
+	.mo-header {
+
+	}
+	.mo-body {
+		padding-bottom: 18px;
+	}
+	.mo-footer {
+		text-align: center;
+		button {
+			padding: 3px 40px;
+		}
+	}
+	.search-group {
+		max-width: 610px;
+    	margin: 0 auto;
+		a {
+			color: $ax-green;
+			text-decoration: underline;
+			word-break: keep-all;
+		}
+	}
+	.search-box {
+		position: relative;
+		display: inline-block;
+		width: 400px;
+		margin-right: 6px;
+	}
+	.search-results {
+		position: absolute;
+		top: 32px;
+	    left: 0;
+	    border: $ax-bdr;
+	    width: 100%;
+	    background-color: #FAFAFA;
+	    z-index: $ax-index-tag;
+	    padding: 5px 0;
+	    li {
+	    	padding: 4px 10px;
+	    	color: #999;
+	    	font-size: 16px;
+	    	&:hover {
+	    		background-color: #eee;
+	    	}
+	    }
+	    span {
+	    	color: #FF6A4C;
+	    }
+	}
+	.search-bar {
+	    height: 32px;
+	    font-size: 16px;
+	    padding: 4px 12px;
+	    border: $ax-bdr;
+	}
+	.search-btn {
+		font-size: 16px;
+	    padding: 4px 12px 4px 34px;
+	    vertical-align: top;
+	    position: relative;
+	    background-color: $ax-green;
+	    color: #fff;
+	    margin-right: 16px;
+	    i {
+	    	display: block;
+	    	position: absolute;
+	    	top: 7px;
+	    	left: 12px;
+	    }
+	}
+	.mgr-r16 {
+		margin-right: 16px;
+	}
+}
+.mo-ver1 {
+	.tip-1 {
+		text-align: center;
+		padding-bottom: 12px;
+		span {
+			color: #999;
+		}
+	}
+	.tip-2 {
+	    text-align: center;
+	    padding-bottom: 25px;
+		span {
+			display: inline-block;
+			color: #FF6A4C;
+		    background-color: #FFF0ED;
+		    padding: 2px 4px 2px 30px;
+		    position: relative;
+		    border-radius: 4px;
+		}
+		i {
+			display: block;
+		    position: absolute;
+		    left: 8px;
+		    top: 4px;
+		}
+	}
+	.title {
+		font-size: 18px;
+	    padding-top: 22px;
+	    padding-bottom: 6px;
+	}
+	.q-table {
+		margin-bottom: 8px;
+		td {
+		    padding: 0 10px;
+		    height: 80px;
+		    text-align: center;
+		    font-size: 12px;
+		}
+	}
+	.page-btn {
+		text-align: center;
+		input {
+			padding: 3px 30px;
+		}
+	}
+	.book-name {
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.book-info {
+		color: #999;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.specimen {
+		padding: 3px;
+		border: $ax-bdr;
+		max-width: 162px;
+		img {
+			border: 1px dashed $ax-gray;
+			border-radius: 2px;
+		}
+	}
+	.add-spe {
+		padding: 3px;
+		border: $ax-bdr;
+		max-width: 162px;
+		div {
+			background-color: #FAFAFA;
+			color: $ax-green;
+			text-align: center;
+			height: 234px;
+		    line-height: 234px;
+		    font-size: 16px;
+		}
+	}
+	.q-num {
+		padding-left: 40px;
+	}
+	.page-num {
+		display: inline-block;
+	    width: 60px;
+	    height: 26px;
+	    border-radius: 2px;
+	    color: #999;
+	    border: $ax-bdr;
+	    background-color: #FAFAFA;
+	    padding: 2px 12px;
+	    margin: 0 8px;
+	}
+	.pre-quote {
+		color: #999;
+	    text-align: center;
+	    padding-top: 40px
+	}
+	.tab-def {
+		border: 0;
+		padding-top: 22px;
+		a {
+			color: #999;
+			font-size: 18px;
+			border-radius: 0;
+			padding: 0px 30px 6px 0;
+			border: 0;
+			&:hover, &:focus {
+				background-color: #fff;
+				border: 0;
+			}
+		}
+		.active {
+			a{
+				color: #333;
+				border: 0;
+				&:hover, &:focus {
+					background-color: #fff;
+					border: 0;
+				}
+			}
+		}
+	}
+	.drop-box {
+		padding: 5px;
+		color: #999;
+    	background-color: #FAFAFA;
+		li {
+			padding: 3px 0;
+			&:hover {
+				background-color: #eee;
+			}
+		}
+	}
+	.r-table {
+		text-align: center;
+		margin-bottom: 8px;
+		td {
+			height: 64px;
+			font-size: 16px;
+		}
+		.tr-1 {
+			td {
+				height: 32px;
+				color: #999;
+			}
+		}
+		button {
+			border: 0;
+			background-color: #fff;
+		}
+	}
+	.n-table {
+		font-size: 16px;
+		width: 100%;
+		.in-box {
+			border: $ax-bdr;
+			color: #999;
+			background-color: #FAFAFA;
+			height: 26px;
+		    border-radius: 2px;
+		    width: 240px;
+		    padding: 2px 12px;
+		}
+		input {
+			margin-top: 12px;
+		}
+	}
+	.s-table {
+		td {
+			text-align: center;
+			font-size: 12px;
+			padding: 3px 0;
+			a {
+				text-decoration: underline;
+				&:hover, &:focus {
+					color: $ax-green;
+				}
+			}
+		}
+	}
+	.mgr-t8 {
+		margin-top: 8px;
+	}
+	.mgr-b9 {
+		margin-bottom: 9px;
+	}
+}
+.mo-ver2 {
+	padding: 30px;
+	.title {
+		font-size: 18px;
+    	padding-bottom: 10px;
+	}
+	.file {
+		border: $ax-bdr;
+		color: #999;
+		background-color: #FAFAFA;
+		height: 26px;
+	    border-radius: 2px;
+	    padding: 2px 12px;
+
+	}
+	.photo {
+		width: 240px;
+		height: 240px;
+		border: 1px solid #979797;
+		background-color: #D8D8D8;
+		margin-top: 25px;
+	}
 }

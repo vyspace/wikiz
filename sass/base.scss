@@ -10,6 +10,9 @@
 a {
 	color: #333;
 }
+input, button, select, textarea {
+	outline: none!important;
+}
 .container {
 	padding: 0;
     margin-right: auto;
@@ -19,6 +22,15 @@ a {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+.bd-table {
+	width: 100%;
+	border-top: $ax-bdr;
+	border-left: $ax-bdr;
+	td {
+		border-right: $ax-bdr;
+		border-bottom: $ax-bdr;
+	}
 }
 .search-icon {
 	background-color: #fff;
@@ -163,6 +175,28 @@ a {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 200;
+	&:hover {
+		color: #fff;
+	}
+	&:focus {
+		color: #fff;
+	}
+}
+.btn-green-frame {
+	padding: 3px 50px;
+	border-radius: 15px;
+	background-color: #fff;
+	border: $ax-bdr;
+	border-color: $ax-green;
+	color: $ax-green;
+	font-size: 16px;
+	font-weight: 200;
+	&:hover {
+		color: $ax-green;
+	}
+	&:focus {
+		color: $ax-green;
+	}
 }
 .main-body {
 	background-color: $ax-body-gray;
@@ -231,16 +265,6 @@ a {
 			left: 0;
 			top: 0;
 		}
-	}
-	.btn-green-frame {
-		padding: 3px 50px;
-		border-radius: 15px;
-		background-color: #fff;
-		border: $ax-bdr;
-		border-color: $ax-green;
-		color: $ax-green;
-		font-size: 16px;
-		font-weight: 200;
 	}
 	.pulldown {
 		button {
@@ -781,6 +805,9 @@ a {
 	}
 }
 
+/* pages */
+@import '_modal_box.scss';
+
 @media (max-width: $phone-width) {
 	.qr-hidden {
 		display:none;
@@ -799,7 +826,7 @@ a {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-$iconNumber: 20;
+$iconNumber: 22;
 @for $i from 1 through $iconNumber { 
 	.icon-#{$i}{
 	    width: image-width(sprite-file($icons, $i));
@@ -807,5 +834,4 @@ $iconNumber: 20;
 	    background-position: sprite-position($icons, $i);
 	}
 }
-
 
