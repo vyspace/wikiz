@@ -9,6 +9,9 @@
 }
 a {
 	color: #333;
+	&:hover, &:focus {
+		color: #333;
+	}
 }
 input, button, select, textarea {
 	outline: none!important;
@@ -17,6 +20,7 @@ input, button, select, textarea {
 	padding: 0;
     margin-right: auto;
     margin-left: auto;
+    min-width: $m-width;
 }
 .no-style {
 	list-style: none;
@@ -37,7 +41,14 @@ input, button, select, textarea {
 	border-right:0;
 	padding: 0 7px;
 }
-
+.more {
+	color: $ax-green;
+	text-decoration: underline;
+	word-break: keep-all;
+	&:hover, &:focus {
+		color: $ax-green;
+	}
+}
 .header {
     border-bottom: $ax-bdr;
     height: 80px;
@@ -79,13 +90,57 @@ input, button, select, textarea {
 			padding: 0 25px;
 		}
 	}
-	.icon-bar{
-		display: block;
-	    width: 22px;
-	    height: 2px;
-	    border-radius: 1px;
-		background-color:#000;
+	em {
+	    &, &::before, &::after {
+	    	display: block;
+		    position: relative;
+		    height: 2px;
+		    width: 22px;
+		    background-color: #25283D;
+		    @each $browser in -webkit-,-moz-,-ms-,-o-,{
+		        #{$browser}backface-visibility: hidden;
+		    }
+		    backface-visibility: hidden;
+	    }
+	    &::before, &::after {
+	    	position: absolute;
+		    content: '';
+		    left: 0;
+		    -webkit-transition: -webkit-transform .2s;
+		    transition: -webkit-transform .2s;
+		    transition: transform .2s;
+		    transition: transform .2s, -webkit-transform .2s;
+	    }
+	    &::before {
+	    	@each $browser in -webkit-,-moz-,-ms-,-o-,{
+		        #{$browser}transform: translateY(-6px);
+		    }
+	    	transform: translateY(-6px);
+	    }
+	    &::after {
+	    	@each $browser in -webkit-,-moz-,-ms-,-o-,{
+		        #{$browser}transform: translateY(6px);
+		    }
+	    	transform: translateY(6px);
+	    }
 	}
+	.nav-open {
+    	em {
+    		background-color: rgba(255, 255, 255, 0);
+    		&::before {
+    			@each $browser in -webkit-,-moz-,-ms-,-o-,{
+			        #{$browser}transform: rotate(-45deg);
+			    }
+    			transform: rotate(-45deg);
+    		}
+    		&::after {
+    			@each $browser in -webkit-,-moz-,-ms-,-o-,{
+			        #{$browser}transform: rotate(45deg);
+			    }
+    			transform: rotate(45deg);
+    		}
+    	}
+    }
 	.login {
 		a:hover	{
 			background: #fff;
@@ -152,21 +207,61 @@ input, button, select, textarea {
 	}
 }
 .hidden-nav {
+	overflow: hidden;
 	a:hover {
 		color: $ax-green;
 	}
 }
 .lit-search {
-	padding: 0 15px 10px 15px;
+	padding: 0 15px 5px 15px;
 	.search-div {
 		border-left: 0;
     	color: #999;
 	}
 }
-.user-box {
-	a {
-		display: block;
+.nav-menu {
+    padding: 10px 0;
+	position: relative;
+	transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    @each $browser in -webkit-,-moz-,-ms-,-o-,{
+        #{$browser}transform: translate3d(0, 0, 0);
+    }
+    transform: translate3d(0, 0, 0);
+    .icon-go {
+		position: absolute;
+		right: 15px;
+    	top: 8px;
+	    &::before {
+		    content: "";
+		    display: inline-block;
+		    width: 10px;
+		    height: 10px;
+		    vertical-align: middle;
+		    border-left: 2px solid #999;
+		    border-bottom: 2px solid #999;
+		    -webkit-transform: rotate(45deg);
+		    transform: rotate(-135deg);
+		    box-sizing: border-box;
+		}
 	}
+	.sub-menu {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+		@each $browser in -webkit-,-moz-,-ms-,-o-,{
+	        #{$browser}transform: translate3d(100%, 0, 0);
+	    }
+	    transform: translate3d(100%, 0, 0);
+	    
+	}
+	.posi-ini {
+		position: initial;
+	}
+}
+.move-in {
+	transform: translate3d(-100%, 0, 0);
 }
 .btn-green {
 	padding: 3px 30px;
@@ -523,6 +618,9 @@ input, button, select, textarea {
 			padding: 15px 30px;
 			.main-graph {
 				position: relative;
+				img {
+					width: 100%;
+				}
 				.btn-box{
 					position: absolute;
 					width: 100%;
@@ -566,9 +664,6 @@ input, button, select, textarea {
 				text-align: center;
 				position: relative;
 				padding: 2px 0;
-			}
-			.add {
-				color: $ax-green;
 			}
 			.del {
 				position: absolute;
@@ -632,12 +727,6 @@ input, button, select, textarea {
 			td {
 				text-align: center;
 			}
-			a {
-				text-decoration: underline;
-				&:hover {
-					color: $ax-green;
-				}
-			}
 			.mgr-b15 {
 				margin-bottom: 15px;
 			}
@@ -650,8 +739,10 @@ input, button, select, textarea {
 		    cursor: pointer;
 		    color: $ax-green;
 		}
-		.add {
-			color: $ax-green;
+		.sp-table {
+			a {
+				text-decoration: underline;
+			}
 		}
 	}
 	.ey-recommend {
@@ -811,9 +902,6 @@ input, button, select, textarea {
 @media (max-width: $phone-width) {
 	.qr-hidden {
 		display:none;
-	}
-	.hidden-nav {
-		
 	}
 }
 @media (min-width: $phone-width) {

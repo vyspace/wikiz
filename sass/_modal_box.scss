@@ -15,17 +15,15 @@
 	.search-group {
 		max-width: 610px;
     	margin: 0 auto;
-		a {
-			color: $ax-green;
-			text-decoration: underline;
-			word-break: keep-all;
-		}
 	}
 	.search-box {
 		position: relative;
 		display: inline-block;
 		width: 400px;
 		margin-right: 6px;
+		@media (max-width: 480px) {
+			width: 300px;
+		}
 	}
 	.search-results {
 		position: absolute;
@@ -244,12 +242,58 @@
 		td {
 			text-align: center;
 			font-size: 12px;
-			padding: 3px 0;
+			padding: 4px 0;
 			a {
 				text-decoration: underline;
 				&:hover, &:focus {
 					color: $ax-green;
 				}
+			}
+		}
+	}
+	.outline {
+		li {
+			border: 1px solid #fff;
+			padding: 10px;
+			&:hover {
+				border-color: $ax-green;
+			}
+		}
+		.show-pic {
+			border: $ax-bdr;
+			padding: 3px;
+			width: 120px;
+			height: 96px;
+			margin-right: 18px;
+			div {
+				height: 100%;
+				background-color: #FAFAFA;
+			}
+		}
+		.ol-title {
+			padding-bottom: 16px;
+		}
+		.ol-content {
+			color: #999;
+		}
+	}
+	.search-explain {
+		border: 1px solid $ax-green;
+		padding: 10px;
+		.ep-title {
+			padding-bottom: 10px;
+		}
+		.ep-content {
+			color: #999;
+		}
+	}
+	.search-nresult {
+		color: #999;
+		.sn-title {
+			padding-bottom: 10px;
+			font-size: 16px;
+			span {
+				color: #333;
 			}
 		}
 	}
