@@ -21,6 +21,7 @@ input, button, select, textarea {
     margin-right: auto;
     margin-left: auto;
     min-width: $m-width;
+    overflow-x: hidden;
 }
 .no-style {
 	list-style: none;
@@ -147,6 +148,59 @@ input, button, select, textarea {
 			color: $ax-green;
 		}
 	}
+	.head-hid{
+		padding-right: 0;
+	}
+	.user-box {
+		padding: 0;
+	}
+	.logined {
+		a:hover, a:focus {
+			background: #fff;
+		}
+		.pdn {
+			padding:18px 10px;
+		}
+		.login-user {
+			cursor: pointer;
+		}
+		.mgr-r2 {
+			margin-right: 2px;
+		}
+		.mgr-t4r2{
+			margin-top: 4px;
+			margin-right: 2px;
+		}
+		.inf-num {
+			color: $ax-green;
+		}
+		.btn-ud {
+			background-color: #fff;
+			cursor: pointer;
+			border: 1px solid transparent;
+			white-space: nowrap;
+			vertical-align: middle;
+		    -ms-touch-action: manipulation;
+		    touch-action: manipulation;
+			@each $browser in -webkit-,-moz-,-ms-,-o-,{
+		        #{$browser}user-select: none;
+		    }
+			user-select: none;
+		}
+		@media (max-width: $pc-width) {
+			.mgr-r2 {
+				display: none;
+			}
+			.mgr-t4r2{
+				display: none;
+			}
+		}
+		@media (max-width: $pad-width) {
+			.pdn {
+				padding:18px 5px;
+			}
+		}
+	}
 }
 .head-nav {
 	a {
@@ -207,7 +261,6 @@ input, button, select, textarea {
 	}
 }
 .hidden-nav {
-	overflow: hidden;
 	a:hover {
 		color: $ax-green;
 	}
@@ -220,7 +273,7 @@ input, button, select, textarea {
 	}
 }
 .nav-menu {
-    padding: 10px 0;
+    padding-top: 10px;
 	position: relative;
 	transition-duration: 0.3s;
     transition-timing-function: ease-out;
@@ -228,11 +281,10 @@ input, button, select, textarea {
         #{$browser}transform: translate3d(0, 0, 0);
     }
     transform: translate3d(0, 0, 0);
-    .icon-go {
-		position: absolute;
-		right: 15px;
-    	top: 8px;
-	    &::before {
+    .icon-gb {
+    	width: 10px;
+    	height: 20px;
+    	&::before {
 		    content: "";
 		    display: inline-block;
 		    width: 10px;
@@ -244,6 +296,22 @@ input, button, select, textarea {
 		    transform: rotate(-135deg);
 		    box-sizing: border-box;
 		}
+    }
+    .icon-go {
+	    &::before {
+	    	@each $browser in -webkit-,-moz-,-ms-,-o-,{
+		        #{$browser}transform: rotate(-135deg);
+		    }
+		    transform: rotate(-135deg);
+		}
+	}
+	.icon-back {
+		&::before {
+	    	@each $browser in -webkit-,-moz-,-ms-,-o-,{
+		        #{$browser}transform: rotate(45deg);
+		    }
+		    transform: rotate(45deg);
+		}
 	}
 	.sub-menu {
 		position: absolute;
@@ -254,10 +322,30 @@ input, button, select, textarea {
 	        #{$browser}transform: translate3d(100%, 0, 0);
 	    }
 	    transform: translate3d(100%, 0, 0);
-	    
+	    a{
+	    	padding-left: 30px;
+	    }
+	    .pdn-l15{
+	    	padding-left: 15px;
+	    }
 	}
 	.posi-ini {
 		position: initial;
+	}
+	.c-gray {
+		color: #999;
+	}
+	.mid-info {
+		background-color: #FAFAFA;
+		border-top: $ax-bdr;
+		border-bottom: $ax-bdr;
+		color: #999;
+		.top-line {
+			padding: 12px 15px 6px 30px;
+		}
+		.bottom-line {
+			padding: 6px 15px 12px 30px;
+		}
 	}
 }
 .move-in {
@@ -914,7 +1002,7 @@ input, button, select, textarea {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-$iconNumber: 22;
+$iconNumber: 24;
 @for $i from 1 through $iconNumber { 
 	.icon-#{$i}{
 	    width: image-width(sprite-file($icons, $i));

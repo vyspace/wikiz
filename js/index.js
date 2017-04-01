@@ -2,8 +2,9 @@
 	"use strict"
 	var menuSwitch = $("#menuSwitch"),
 		subMenuOpen = $("#subMenuOpen"),
-		navMenu = $("#navMenu");
-	$("#myCarousiel").carousel();
+		navMenu = $("#navMenu"),
+		goBackBtn = $("#goBackBtn");
+	//$("#myCarousiel").carousel();
 	menuSwitch.on("click", function(e) {
 		var t = $(this),
 			exp = t.attr("aria-expanded");
@@ -17,5 +18,9 @@
 	subMenuOpen.on("click", function(e) {
 		e.stopPropagation();
 		navMenu.addClass("move-in");
+	});
+	goBackBtn.on("click", function(e) {
+		e.stopPropagation();
+		navMenu.removeClass("move-in");
 	});
 })(jQuery);

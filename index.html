@@ -29,8 +29,8 @@
 						<em></em>
 					</a>
 				</div>
-				<div class="collapse navbar-collapse">
-					<div class="col-md-7 col-sm-6 pdn-t7">
+				<div class="collapse navbar-collapse head-hid">
+					<div class="col-md-6 col-sm-6 pdn-t7">
 						<div class="input-group search">
 							<span class="input-group-addon search-icon">
 								<div class="icon-sprite icon-3"></div>
@@ -39,10 +39,16 @@
 							<span class="input-group-addon search-btn">搜词条</span>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-3">
-						<ul class="nav navbar-nav navbar-right login">
+					<div class="col-md-3 col-sm-3 user-box">
+						<!-- <ul class="nav navbar-nav navbar-right login">
 							<li><a href="#">登录</a></li>
 							<li><a href="#">注册</a></li>
+						</ul> -->
+						<ul class="nav navbar-nav navbar-right logined">
+							<li class="pdn clearfix login-user">
+							<div class="icon-sprite icon-23 pull-left mgr-r2"></div>欢迎，张老板</li>
+							<li><a href="#" class="pdn clearfix"><div class="icon-sprite icon-24 pull-left mgr-t4r2"></div>消息(<span class="inf-num">3</span>)</a></li>
+							<li><a href="#" class="pdn">退出</a></li>
 						</ul>
 					</div>
 				</div>
@@ -82,29 +88,32 @@
 				<li><a href="#">登录</a></li>
 				<li><a href="#">注册</a></li>
 				<li class="posi-ini">
-					<a id="subMenuOpen">欢迎，张老板<i class="icon-go"></i></a>
+					<a class="clearfix" id="subMenuOpen">欢迎，张老板<i class="icon-gb icon-go pull-right"></i></a>
 					<ol class="no-style nav sub-menu">
 						<li>
-							<a href="#">
-								<span class="">积分：33224</span><span>申请兑换</span>
+							<a href="javascript:void(0);" class="pdn-l15" id="goBackBtn"><i class="icon-gb icon-back"></i>返回</a>
+						</li>
+						<li>
+							<a href="#" class="clearfix">
+								<span class="">积分：33224</span><span class="pull-right c-gray">申请兑换</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<span class="">积分：帝政专家</span><span>查看更多</span>
+							<a href="#" class="clearfix">
+								<span class="">积分：帝政专家</span><span class="pull-right c-gray">查看更多</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<span class="">职务：帝政高审</span><span>更多</span>
+							<a href="#" class="clearfix">
+								<span class="">职务：帝政高审</span><span class="pull-right c-gray">更多</span>
 							</a>
 						</li>
-						<li>
-							<div>
-								<span>“xxx词条”</span><span>编辑中&nbsp;5h33min</span>
+						<li class="mid-info">
+							<div class="top-line clearfix">
+								<span>“xxx词条”</span><span class="pull-right">编辑中&nbsp;5h33min</span>
 							</div>
-							<div>
-								<span>“xxx词条”</span><span>编辑中&nbsp;5h33min</span>
+							<div class="bottom-line clearfix">
+								<span>“xxx词条”</span><span class="pull-right">编辑中&nbsp;5h33min</span>
 							</div>
 						</li>
 						<li><a href="#">消息</a></li>
@@ -150,7 +159,7 @@
 			</ul>
 		</div>
 	</div>
-<!-- 	<div id="myCarousiel" class="carousel slide">
+	<div id="myCarousiel" class="carousel slide">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousiel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousiel" data-slide-to="1"></li>
@@ -168,7 +177,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-body">
+ 	<div class="main-body">
 		<ul class="container category">
 			<li class="title">推荐任务</li>
 			<li class="clearfix">
@@ -400,7 +409,7 @@
 		</ul>
 	</div>
 	<div class="footer">
-		<div class="container">
+		 <div class="container">
 			<div class="box-top">
 				<ul>
 					<li class="title">关于我们</li>
@@ -409,7 +418,7 @@
 					<li>恰好在《名利场》的这篇长文中也谈到了苹果公司仅用 10 天时间就修复了 iOS 系统 3 个零日漏洞的事情。有兴趣的用户可以了解一下。</li>
 				</ul>
 			</div>
-			<div class="row box-middle">
+			<div class="box-middle clearfix">
 				<div class="col-md-5 col-sm-5 col-xs-12">
 					<div class="col-md-4 col-sm-4 col-xs-4">
 						<ul>
@@ -473,8 +482,8 @@
 			<div class="box-bottom small">
 				Copyright © 2016 爱肯栖信息技术有限公司 ｜ 沪ICP备12312号
 			</div>
-		</div>
-	</div> -->
+		</div> 
+	</div> 
 
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>

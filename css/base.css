@@ -22,6 +22,7 @@ input, button, select, textarea {
   margin-right: auto;
   margin-left: auto;
   min-width: 375px;
+  overflow-x: hidden;
 }
 
 .no-style {
@@ -165,6 +166,58 @@ input, button, select, textarea {
   background: #fff;
   color: #35A85B;
 }
+.header .head-hid {
+  padding-right: 0;
+}
+.header .user-box {
+  padding: 0;
+}
+.header .logined a:hover, .header .logined a:focus {
+  background: #fff;
+}
+.header .logined .pdn {
+  padding: 18px 10px;
+}
+.header .logined .login-user {
+  cursor: pointer;
+}
+.header .logined .mgr-r2 {
+  margin-right: 2px;
+}
+.header .logined .mgr-t4r2 {
+  margin-top: 4px;
+  margin-right: 2px;
+}
+.header .logined .inf-num {
+  color: #35A85B;
+}
+.header .logined .btn-ud {
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+@media (max-width: 1210px) {
+  .header .logined .mgr-r2 {
+    display: none;
+  }
+  .header .logined .mgr-t4r2 {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .header .logined .pdn {
+    padding: 18px 5px;
+  }
+}
 
 .head-nav a {
   padding: 0 !important;
@@ -231,9 +284,6 @@ input, button, select, textarea {
   color: #333;
 }
 
-.hidden-nav {
-  overflow: hidden;
-}
 .hidden-nav a:hover {
   color: #35A85B;
 }
@@ -247,7 +297,7 @@ input, button, select, textarea {
 }
 
 .nav-menu {
-  padding: 10px 0;
+  padding-top: 10px;
   position: relative;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -257,12 +307,11 @@ input, button, select, textarea {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.nav-menu .icon-go {
-  position: absolute;
-  right: 15px;
-  top: 8px;
+.nav-menu .icon-gb {
+  width: 10px;
+  height: 20px;
 }
-.nav-menu .icon-go::before {
+.nav-menu .icon-gb::before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -273,6 +322,20 @@ input, button, select, textarea {
   -webkit-transform: rotate(45deg);
   transform: rotate(-135deg);
   box-sizing: border-box;
+}
+.nav-menu .icon-go::before {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.nav-menu .icon-back::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .nav-menu .sub-menu {
   position: absolute;
@@ -285,14 +348,29 @@ input, button, select, textarea {
   -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
-.nav-menu .sub-menu .li-1 {
-  padding: 10px 20px;
+.nav-menu .sub-menu a {
+  padding-left: 30px;
 }
-.nav-menu .sub-menu .pdn-b5 {
-  padding-bottom: 5px;
+.nav-menu .sub-menu .pdn-l15 {
+  padding-left: 15px;
 }
 .nav-menu .posi-ini {
   position: initial;
+}
+.nav-menu .c-gray {
+  color: #999;
+}
+.nav-menu .mid-info {
+  background-color: #FAFAFA;
+  border-top: 1px solid #D2D6D3;
+  border-bottom: 1px solid #D2D6D3;
+  color: #999;
+}
+.nav-menu .mid-info .top-line {
+  padding: 12px 15px 6px 30px;
+}
+.nav-menu .mid-info .bottom-line {
+  padding: 6px 15px 12px 30px;
 }
 
 .move-in {
@@ -1250,7 +1328,7 @@ input, button, select, textarea {
   }
 }
 .icon-sprite {
-  background-image: url('../img/icons-sb1988b59ac.png');
+  background-image: url('../img/icons-sfa02609f7c.png');
   background-repeat: no-repeat;
 }
 
@@ -1269,43 +1347,43 @@ input, button, select, textarea {
 .icon-3 {
   width: 18px;
   height: 18px;
-  background-position: -342px 0;
+  background-position: -378px 0;
 }
 
 .icon-4 {
   width: 63px;
   height: 64px;
-  background-position: -362px 0;
+  background-position: -398px 0;
 }
 
 .icon-5 {
   width: 52px;
   height: 64px;
-  background-position: -427px 0;
+  background-position: -463px 0;
 }
 
 .icon-6 {
   width: 65px;
   height: 64px;
-  background-position: -481px 0;
+  background-position: -517px 0;
 }
 
 .icon-7 {
   width: 13px;
   height: 16px;
-  background-position: -548px 0;
+  background-position: -584px 0;
 }
 
 .icon-8 {
   width: 16px;
   height: 16px;
-  background-position: -563px 0;
+  background-position: -599px 0;
 }
 
 .icon-9 {
   width: 10px;
   height: 16px;
-  background-position: -581px 0;
+  background-position: -617px 0;
 }
 
 .icon-10 {
@@ -1384,4 +1462,16 @@ input, button, select, textarea {
   width: 16px;
   height: 16px;
   background-position: -324px 0;
+}
+
+.icon-23 {
+  width: 14px;
+  height: 18px;
+  background-position: -342px 0;
+}
+
+.icon-24 {
+  width: 18px;
+  height: 12px;
+  background-position: -358px 0;
 }
