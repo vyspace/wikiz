@@ -1,5 +1,5 @@
 (function($, undefined){
-	"use strict"
+	"use strict";
 	var checkBoxes = $('div[role="checkbox"]');
 	checkBoxes.on("click", function(e) {
 		e.stopPropagation();

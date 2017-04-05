@@ -94,6 +94,7 @@ input, button, select, textarea {
   color: #999;
   border-color: #D2D6D3;
   background-color: #FAFAFA;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .header .search-btn {
@@ -407,6 +408,45 @@ input, button, select, textarea {
 }
 .btn-green-frame:focus {
   color: #35A85B;
+}
+
+.head-sub-menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #D2D6D3;
+  width: 262px;
+}
+.head-sub-menu .li-1 {
+  padding: 14px;
+}
+.head-sub-menu .pdn-b5 {
+  padding-bottom: 5px;
+}
+.head-sub-menu .li-2 {
+  padding: 14px;
+  background-color: #FAFAFA;
+  border-top: 1px solid #D2D6D3;
+  border-bottom: 1px solid #D2D6D3;
+}
+.head-sub-menu .li-table {
+  width: 100%;
+}
+.head-sub-menu .li-table td {
+  text-align: center;
+  padding: 4px 0;
+}
+.head-sub-menu .li-table .td-br {
+  border-bottom: 1px solid #D2D6D3;
+  border-right: 1px solid #D2D6D3;
+}
+.head-sub-menu .li-table .td-b {
+  border-bottom: 1px solid #D2D6D3;
+}
+.head-sub-menu .li-table .td-r {
+  border-right: 1px solid #D2D6D3;
 }
 
 .main-body {

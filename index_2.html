@@ -12,10 +12,6 @@
 	<!-- build:css css/index.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<!-- endbuild -->
-	<!--[if lte IE 9]>
-	<script type="text/javascript" src="plugin/respond.min.js"></script>
-	<script type="text/javascript" src="plugin/html5shiv.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 	<div class="header">
@@ -45,8 +41,8 @@
 							<li><a href="#">注册</a></li>
 						</ul> -->
 						<ul class="nav navbar-nav navbar-right logined">
-							<li class="pdn clearfix login-user">
-							<div class="icon-sprite icon-23 pull-left mgr-r2"></div>欢迎，张老板</li>
+							<li class="pdn clearfix login-user" id="headSubBtn">
+								<div class="icon-sprite icon-23 pull-left mgr-r2"></div>欢迎，张老板</li>
 							<li><a href="#" class="pdn clearfix"><div class="icon-sprite icon-24 pull-left mgr-t4r2"></div>消息(<span class="inf-num">3</span>)</a></li>
 							<li><a href="#" class="pdn">退出</a></li>
 						</ul>
@@ -123,36 +119,6 @@
 						<li><a href="#">任务中心</a></li>
 						<li><a href="#">帮助</a></li>
 					</ol>
-					<!-- <ol class="no-style sub-menu">
-						<li class="li-1">
-							<div class="pdn-b5">
-								<span class="">积分：</span><span>33224</span><a href="" class="more">申请兑换</a>
-							</div>
-							<div class="pdn-b5">
-								<span>职称：</span><span>帝政专家</span><a href="" class="more">查看更多</a>
-							</div>
-							<div>
-								<span>职务：</span><span>帝政高审</span><a href="" class="more">更多</a>
-							</div>
-						</li>
-						<li>
-							
-						<li>
-							<table class="">
-								<tr>
-									<td><a href="">消息</a></td><td><a href="">帐号设置</a></td>
-								</tr>
-								<tr>
-									<td><a href="">有奖活动</a></td>
-									<td><a href="">我的百科</a></td>
-								</tr>
-								<tr>
-									<td><a href="">任务中心</a></td>
-									<td><a href="">帮助</a></td>
-								</tr>
-							</table>
-						</li>
-					</ol>  -->	
 				</li>
 				<li><a href="#">消息</a></li>
 				<li><a href="#">退出</a></li>
@@ -484,21 +450,57 @@
 			</div>
 		</div> 
 	</div> 
-
+	<ol class="no-style head-sub-menu" id="headSubMenu">
+		<li class="li-1 clearfix">
+			<div class="pdn-b5">
+				<span class="">积分：</span><span>33224</span><a href="" class="more pull-right">申请兑换</a>
+			</div>
+			<div class="pdn-b5">
+				<span>职称：</span><span>帝政专家</span><a href="" class="more pull-right">查看更多</a>
+			</div>
+			<div>
+				<span>职务：</span><span>帝政高审</span><a href="" class="more pull-right">更多</a>
+			</div>
+		</li>
+		<li class="li-2 clearfix">
+			<div class="pdn-b5">
+				<span>“xxx词条”</span><span class="pull-right">编辑中&nbsp;5h33min</span>
+			</div>
+			<div>
+				<span>“xxx词条”</span><span class="pull-right">编辑中&nbsp;5h33min</span>
+			</div>
+		</li>	
+		<li>
+			<table class="li-table">
+				<tr>
+					<td class="td-br"><a href="">消息</a></td>
+					<td class="td-b"><a href="">帐号设置</a></td>
+				</tr>
+				<tr>
+					<td class="td-br"><a href="">有奖活动</a></td>
+					<td class="td-b"><a href="#">我的百科</a></td>
+				</tr>
+				<tr>
+					<td class="td-r"><a href="">任务中心</a></td>
+					<td><a href="">帮助</a></td>
+				</tr>
+			</table>
+		</li>
+	</ol> 	
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="plugin/respond.min.js"></script>
+	<script type="text/javascript" src="plugin/html5shiv.min.js"></script>
+	<![endif]-->
 	<script type="text/javascript">
 		(function($, undefined){
 			"use strict"
-			var navBtn = $("#navBtn"),
-				navbarCollapse = $("#navbarCollapse");
-			navBtn.on("click", function() {
-				navbarCollapse.toggle();
-			})
+			
 		})(jQuery);
 	</script>
-	<!-- build:js js/index.min.js -->
-	<script type="text/javascript" src="js/index.js"></script>
+	<!-- build:js js/base.min.js -->
+	<script type="text/javascript" src="js/base.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

@@ -81,6 +81,7 @@ input, button, select, textarea {
 	    color: #999;
 	    border-color: $ax-gray;
 	    background-color: #FAFAFA;
+	    cursor: pointer;
 	    @media (max-width: $pad-width) {
 			padding: 0 15px;
 		}
@@ -379,6 +380,44 @@ input, button, select, textarea {
 	}
 	&:focus {
 		color: $ax-green;
+	}
+}
+.head-sub-menu {
+	display: none;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: $ax-bdr;
+	width: 262px;
+	.li-1 {
+		padding: 14px;
+	}
+	.pdn-b5 {
+		padding-bottom: 5px;
+	}
+	.li-2 {
+		padding: 14px;
+		background-color: #FAFAFA;
+		border-top: $ax-bdr;
+		border-bottom: $ax-bdr;
+	}
+	.li-table {
+		width: 100%;
+		td {
+			text-align: center;
+			padding: 4px 0;
+		}
+		.td-br {
+			border-bottom: $ax-bdr;
+			border-right: $ax-bdr;
+		}
+		.td-b {
+			border-bottom: $ax-bdr;
+		}
+		.td-r {
+			border-right: $ax-bdr;
+		}
 	}
 }
 .main-body {
