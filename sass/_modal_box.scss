@@ -327,3 +327,62 @@
 		margin-top: 25px;
 	}
 }
+.mo-ver3 {
+	li {
+		margin-bottom: 12px;
+	}
+	.base-check {
+		background-color: #FAFAFA;
+		color: #999;
+		padding: 8px 16px;
+		.pdn-b8 {
+			padding-bottom: 8px;
+		}
+	}
+	.txt-r {
+		text-align: right;
+	}
+	.v3-title {
+		color: #999;
+		padding-bottom: 8px;
+	}
+	.pub-time {
+		font-size: 16px;
+	}
+	table {
+		width: 100%;
+		border: $ax-bdr;
+		border-collapse: initial;
+		td {
+			padding: 4px 0 4px 8px;
+		}
+	}
+	.bdr-b {
+		td {
+			border-bottom: $ax-bdr;
+		}
+	}
+	.last-td {
+		text-align: right;
+    	padding-right: 8px;
+    	a {
+    		text-decoration: none;
+    	}
+	}
+	.pass-check {
+		font-size: 18px;
+		text-align: center;
+		color: $ax-green;
+	}
+	.mgr-b30 {
+		margin-bottom: 30px;
+	}
+	.integral {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.no-title {
+		font-size: 18px;
+		color: $ax-green;
+	}
+}
