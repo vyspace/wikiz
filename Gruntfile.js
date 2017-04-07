@@ -78,6 +78,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-usemin');
 
 	grunt.registerTask('default', ['compass', 'concat']);
-	grunt.registerTask('produce', ['clean', 'compass', 'cssmin', 'concat', 'jshint', 'uglify', 'copy', 'usemin']);
+	grunt.registerTask('production', ['clean', 'compass', 'cssmin', 'concat', 'jshint', 'uglify', 'copy', 'usemin']);
 
 };

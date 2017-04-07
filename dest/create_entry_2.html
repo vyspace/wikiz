@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱肯栖</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="plugin/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.min.css">
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="plugin/respond.min.js"></script>
+	<script type="text/javascript" src="plugin/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<a href="#" class="">
+						<img src="img/logo.png" />
+					</a>
+					<a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<div class="col-md-7 col-sm-6 pdn-t7">
+						<div class="input-group search">
+							<span class="input-group-addon search-icon">
+								<div class="icon-sprite icon-3"></div>
+							</span>
+							<input type="text" class="form-control search-text" />
+							<span class="input-group-addon search-btn">搜词条</span>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-3">
+						<ul class="nav navbar-nav navbar-right login">
+							<li><a href="#">登录</a></li>
+							<li><a href="#">注册</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="collapse navbar-collapse head-nav">
+			<ul class="nav navbar-nav navbar-left">
+				<li role="presentation"><a class="active" href="#">风格派系</a></li>
+				<li role="presentation"><a href="#">历史大师</a></li>
+				<li role="presentation"><a href="#">装饰元素</a></li>
+				<li role="presentation"><a href="#">专业术语</a></li>
+				<li role="presentation"><a href="#">家具名品</a></li>
+				<li role="presentation"><a href="#">机构</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">引用书库</a></li>
+				<li><a href="#">百科帮助</a></li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse hidden-nav" aria-expanded="false" id="navbarCollapse">
+			<ul class="nav navbar-nav">
+				<li>
+					<div class="input-group lit-search" id="litSearchBar">
+						<span class="input-group-addon search-icon">
+							<div class="icon-sprite icon-3"></div>
+						</span>
+						<div class="form-control search-div">搜词条</div>
+					</div>
+				</li>
+				<li role="presentation"><a href="#">风格派系</a></li>
+				<li role="presentation"><a href="#">装饰元素</a></li>
+				<li role="presentation"><a href="#">专业术语</a></li>
+				<li role="presentation"><a href="#">家具名品</a></li>
+				<li role="presentation"><a href="#">机构</a></li>
+				<li role="presentation" class="user-box">
+					<a href="#" class="pull-left">登录</a>
+					<a href="#" class="pull-right">注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main-body mb-2">
+		<div class="container entry">
+			<div class="step-tip">
+				<div class="ce-title">创建词条（2/2）</div>
+				<div class="ce-cont">一句必要的提示，比如让用户先了解编辑须知，当也可以通过必须完成几次编辑之后才可以创建词条</div>
+			</div>
+			<div class="breadcrum-ce">
+				编辑内容
+			</div>
+			<ul class="no-style">
+				<li class="ey-basic-info">
+					<div class="row info-detail">
+						<div class="col-md-5 pdn-0 main-graph-ce">
+							<div class="btn-box">
+								<input class="btn btn-green-frame center-block" type="button" value="添加主图" ／>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<dl>
+								<dt><span class="dt-title">基本信息</span></dt>
+								<dd class="mgr-b25">
+									<table class="basic-table">
+										<tr>
+											<td>国别</td>
+											<td class="bd-r">
+												<div class="dropdown pulldown">
+													<button class="btn btn-def dropdown-toggle type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+														<span class="pull-left">请选择</span><span class="caret pull-right mgr-t8"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+														<li><a href="#">美国</a></li>
+														<li><a href="#">意大利</a></li>
+														<li><a href="#">德国</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>风格</td>
+											<td>
+												<div class="dropdown pulldown">
+													<button class="btn btn-def dropdown-toggle type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+														<span class="pull-left">请选择</span><span class="caret pull-right mgr-t8"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+														<li><a href="#">巴洛克</a></li>
+														<li><a href="#">星巴克</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>别名</td>
+											<td class="bd-r">
+												<input class="form-control tex-def" type="text" value="" placeholder="请输入" />
+											</td><td>流行时间</td>
+											<td>
+												<div class="dropdown pulldown">
+													<button class="btn btn-def dropdown-toggle type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+														<span class="pull-left">请选择</span><span class="caret pull-right mgr-t8"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+														<li><a href="#">20世纪</a></li>
+														<li><a href="#">21世纪</a></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>流行地域</td>
+											<td class="bd-r">
+												<input class="form-control tex-def" type="text" value="" placeholder="请输入" />
+											</td><td>原文</td>
+											<td>
+												<input class="form-control tex-def" type="text" value="" placeholder="请输入" />
+											</td>
+										</tr>
+									</table>
+								</dd>
+								<dt><span class="dt-title">概述</span></dt>
+								<dd class="mgr-b25">
+									<textarea class="form-control" rows="3" placeholder="请输入"></textarea>
+								</dd>
+								<dt><span class="dt-title">大师</span></dt>
+								<dd>
+									<table class="ex-table x-table table-13">
+										<col width="33.3" />
+										<col width="33.3" />
+										<col width="33.4" />
+										<tr>
+											<td><a href="#" class="more">添加</a></td>
+										</tr>
+									</table>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</li>
+				<li class="box ey-history">
+					<div class="com-title">
+						<span class="title">历史背景</span>
+					</div>
+					<div>
+						<input class="btn btn-green" type="button" value="添加风格引用" ／>
+					</div>
+				</li>
+				<li class="box ey-piclist">
+					<div class="com-title">
+						<span class="title">经典家居/椅</span>
+					</div>
+					<div class="clearfix piclist">
+						<div class="item-teletext pic-item">
+							<div class="card-2 tex-cm">
+								点击新增卡片
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="box ey-piclist">
+					<div class="com-title">
+						<span class="title">扩展阅读</span>
+					</div>
+					<dl class="ex-cont">
+						<dt>同期风格</dt>
+						<dd class="mgr-b15">
+							<table class="ex-table sp-table table-14">
+								<col width="25%" />
+								<col width="25%" />
+								<col width="25%" />
+								<col width="25%" />
+								<tr>
+									<td><a class="more" href="javascript:void(0);" data-toggle="modal">添加</a></td>
+								</tr>
+							</table>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="gbtn-area">
+				<input class="btn btn-green-lg" type="button" value="添加风格引用" ／>
+			</div>
+		</div>
+	</div>
+		<div class="footer">
+		<div class="container">
+			<div class="row box-middle">
+				<div class="col-md-5 col-sm-5 col-xs-12">
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<ul>
+							<li class="title">百科知识</li>
+							<li>编辑入门</li>
+							<li>编辑规则</li>
+							<li>百科术语</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm- col-xs-4">
+						<ul>
+							<li class="title">成长</li>
+							<li>积分规则</li>
+							<li>职称规则</li>
+							<li>职务规则</li>
+							<li>兑换规则</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<ul>
+							<li class="title">推荐网站</li>
+							<li>维基百科</li>
+							<li>百度百科</li>
+							<li>知乎</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-2 pdn-0 qr-hidden">
+					<ul>
+						<li><img src="img/qrcode.jpg"></li>
+						<li class="small">扫描二维码，关注公众号</li>
+					</ul>
+				</div>
+				<div class="col-md-5 col-sm-5 col-xs-12">
+					<div class="col-md-5 col-sm-4 col-xs-4">
+						<ul>
+							<li class="title">百科管理维护人员</li>
+							<li>王大锤（主审）</li>
+							<li>王二锤（编辑）</li>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<ul>
+							<li class="title">我们的QQ群</li>
+							<li>214569009</li>
+							<li>387699781</li>
+							<li>312344952</li>
+							<li>1309114923</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4">
+						<ul>
+							<li class="title">联系我们</li>
+							<li class="title">投诉</li>
+							<li class="title">Q&A</li>
+							<li class="title">免责声明</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="box-bottom small">
+				Copyright © 2016 爱肯栖信息技术有限公司 ｜ 沪ICP备12312号
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
+</body>
+</html>

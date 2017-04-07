@@ -12,6 +12,9 @@
 	<!-- build:css css/index.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<!-- endbuild -->
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="plugin/respond.src.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div class="header">
@@ -489,16 +492,6 @@
 	</ol> 	
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
-	<!--[if lte IE 9]>
-	<script type="text/javascript" src="plugin/respond.min.js"></script>
-	<script type="text/javascript" src="plugin/html5shiv.min.js"></script>
-	<![endif]-->
-	<script type="text/javascript">
-		(function($, undefined){
-			"use strict"
-			
-		})(jQuery);
-	</script>
 	<!-- build:js js/base.min.js -->
 	<script type="text/javascript" src="js/base.js"></script>
 	<!-- endbuild -->

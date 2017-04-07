@@ -366,6 +366,23 @@ input, button, select, textarea {
 		color: #fff;
 	}
 }
+.btn-green-lg {
+	width: 260px;
+    height: 60px;
+    line-height: 47px;
+	text-align: center;
+    border-radius: 4px;
+    background-color: #35A85B;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+	&:hover {
+		color: #fff;
+	}
+	&:focus {
+		color: #fff;
+	}
+}
 .btn-green-frame {
 	padding: 3px 50px;
 	border-radius: 15px;
@@ -612,6 +629,12 @@ input, button, select, textarea {
 	.breadcrum {
 		padding-bottom: 10px;
 	}
+	.breadcrum-ce {
+		border-bottom: $ax-bdr;
+		margin-bottom: 10px;
+		font-size: 18px;
+		color: #999;
+	}
 	.com-title {
 		border-bottom: $ax-bdr;
 		margin-bottom: 15px;
@@ -754,6 +777,16 @@ input, button, select, textarea {
 					bottom: 0;
 				}
 			}
+			.main-graph-ce {
+				position: relative;
+				background-color: #FAFAFA;
+				height: 403px;
+				.btn-box{
+					position: absolute;
+					width: 100%;
+					bottom: 50%;
+				}
+			}
 			dt {
 				border-bottom: $ax-bdr;
 				margin-bottom: 15px;
@@ -775,6 +808,7 @@ input, button, select, textarea {
 			font-size: 18px;
 			color: #999;
 			padding-right: 25px;
+			font-weight: 400;
 		}
 		.basic-table {
 			width: 100%;
@@ -989,6 +1023,81 @@ input, button, select, textarea {
 		}
 		
 	}
+	.ey-basic-fill {
+		background-color: #fff;
+		padding: 30px 15px;
+		font-size: 16px;
+		label {
+			font-weight: 400;
+		}
+		.btn-default {
+			width: 100%;
+			text-align: left;
+			&:hover {
+				background-color: #fff;
+			}
+			&:focus {
+				background-color: #fff;
+			}
+		}
+		.dropdown-menu {
+			margin-left: 15px;
+		}
+		.caret {
+			margin-top: 8px;
+		}
+		.explain {
+			font-size: 14px;
+    		padding-top: 6px;
+    		color: #999;
+		}
+	}
+	.table-13{
+		width: 33.3%;
+	}
+	.table-14{
+		width: 25%;
+	}
+	.step-tip {
+		background-color: $ax-green;
+		color: #fff;
+		padding: 15px;
+		border-radius: 4px;
+		margin-bottom: 25px;
+		.ce-title {
+			font-size: 24px;
+			padding-bottom: 8px;
+		}
+		.ce-cont {
+			font-size: 16px;
+			font-weight: 100;
+		}
+	}
+	.gbtn-area {
+		text-align: center;
+		padding-top: 30px;
+	}
+	.radio {
+	    display: inline;
+	    padding: 0 22px;
+	}
+	.radio-box {
+		padding-top: 6px;
+	}
+	.repeat {
+	    position: relative;
+		padding-left: 22px;
+    	padding-top: 6px;
+    	color: #FF6A4C;
+	}
+	.icon-ok {
+		margin-top: 4px;
+	}
+	.icon-rp {
+		position: absolute;
+	    left: 0;
+	    top: 9px;
+	}
 }
 .footer{
 	.box-top {
@@ -1041,7 +1150,7 @@ input, button, select, textarea {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-$iconNumber: 24;
+$iconNumber: 26;
 @for $i from 1 through $iconNumber { 
 	.icon-#{$i}{
 	    width: image-width(sprite-file($icons, $i));
