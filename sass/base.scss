@@ -1134,6 +1134,7 @@ input, button, select, textarea {
 
 /* pages */
 @import '_modal_box.scss';
+@import '_search_result.scss';
 
 @media (max-width: $phone-width) {
 	.qr-hidden {

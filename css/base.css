@@ -1523,6 +1523,83 @@ input, button, select, textarea {
   color: #35A85B;
 }
 
+.sr-box {
+  border: 1px solid #D2D6D3;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  display: none;
+}
+.sr-box .history {
+  background-color: #FAFAFA;
+  color: #999;
+  font-size: 12px;
+  padding: 2px 16px;
+}
+.sr-box li {
+  padding: 6px 6px 6px 32px;
+  cursor: pointer;
+}
+.sr-box li:hover {
+  background-color: #FAFAFA;
+}
+
+.sr-body {
+  padding: 15px 0;
+}
+
+.search-results {
+  background-color: #fff;
+  border-radius: 4px;
+}
+.search-results .sr-title {
+  font-size: 16px;
+  padding: 30px 30px 15px 30px;
+}
+.search-results .sr-title span {
+  font-size: 32px;
+}
+.search-results .pdn {
+  padding: 0 30px 30px 30px;
+}
+.search-results .sr-tip {
+  padding-bottom: 10px;
+  color: #999;
+}
+.search-results .sr-name {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.search-results .sr-cont {
+  color: #999;
+}
+.search-results .mgr-b20 {
+  margin-bottom: 20px;
+}
+.search-results .page-nav {
+  width: 228px;
+  margin: 30px auto 0 auto;
+}
+.search-results .pagination {
+  margin: 0;
+}
+.search-results .no-result {
+  background-color: #EAF6EE;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 15px;
+}
+.search-results .no-result span {
+  color: #333;
+}
+.search-results .no-result a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
 @media (max-width: 768px) {
   .qr-hidden {
     display: none;

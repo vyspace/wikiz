@@ -7,7 +7,9 @@
 		navMenu = $("#navMenu"),
 		goBackBtn = $("#goBackBtn"),
 		navBtn = $("#navBtn"),
-		navbarCollapse = $("#navbarCollapse");
+		navbarCollapse = $("#navbarCollapse"),
+		searchText = $("#searchText"),
+		searchEntry = $("#searchEntry");
 	navBtn.on("click", function(e) {
 		e.stopPropagation();
 		navbarCollapse.toggle();
@@ -40,14 +42,35 @@
 		e.stopPropagation();
 		navMenu.removeClass("move-in");
 	});
+	searchText.on("focus", function(e) {
+		e.stopPropagation();
+		var t = $(this),
+			oft = t.offset(),
+			sw = (t.width() + 32 + 25) + "px",
+			top = oft.top + 32,
+			left = oft.left - 32;
+		searchEntry.css({"top": top, "left": left, "width": sw}).show();
+		
+	}).on("click", function(e) {
+		e.stopPropagation();
+		return false;
+	});
 	$("body").on("click", function(e) {
 		if(headSubMenu.isShow()) {
 			headSubMenu.hide();
 		}
+		if(searchEntry.isShow()) {
+			searchEntry.hide();
+		}
 	});
 	$(window).on("resize", function(e) {
 		e.stopPropagation();
-		headSubMenu.hide();
+		if(headSubMenu.isShow()) {
+			headSubMenu.hide();
+		}
+		if(searchEntry.isShow()) {
+			searchEntry.hide();
+		}
 		return false;
 	});
 
