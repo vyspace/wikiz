@@ -33,6 +33,11 @@ module.exports = function(grunt) {
 			},
 		},
 		uglify: {
+			options: {
+				mangle: {
+					except: ['jQuery', 'Bootstrap']
+				}
+			},
 			target: {
 				files: {
                     'dest/js/base.min.js': ['js/base.js']

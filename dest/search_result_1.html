@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="plugin/bootstrap.min.css">
-	<!-- build:css css/base.min.css -->
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<!-- endbuild -->
+	<link rel="stylesheet" href="css/base.min.css">
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="plugin/respond.min.js"></script>
+	<script type="text/javascript" src="plugin/html5shiv.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div class="header">
@@ -85,9 +87,6 @@
 	<div class="main-body sr-body">
 		<div class="search-results container">
 			<div class="sr-title">搜索此条&nbsp;<span>洛可可风格</span></div>
-			<div class="no-result">
-				该词条“<span>洛可可风格</span>”并未收录，欢迎来<a href="#" class="more">创建</a>
-			</div>
 			<div class="pdn">
 				<div class="sr-tip">相似结果：</div>
 				<ul class="no-style">
@@ -198,8 +197,6 @@
 	</div>
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
-	<!-- build:js js/base.min.js -->
-	<script type="text/javascript" src="js/base.js"></script>
-	<!-- endbuild -->
+	<script src="js/base.min.js"></script>
 </body>
 </html>

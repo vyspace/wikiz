@@ -1,0 +1,64 @@
+.mc-body {
+	padding: 15px 0;
+}
+.mc-side {
+	width: 100%;
+	margin-bottom: 15px;
+	i {
+		display: block;
+		position: absolute;
+		top: 10px;
+    	left: 12px;
+	}
+	a {
+		font-size: 16px;
+		text-align: left;
+		padding: 10px 12px 10px 40px;
+		margin: 0!important;
+		border: 0;
+		&:hover, &:focus, &:active {
+			color: $ax-green;
+			background-color: #fff!important;
+			border-color: $ax-gray!important;
+			outline: 0;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		}
+	}
+	.bdr-b {
+		border-bottom: $ax-bdr;
+	}
+}	
+.mc-main {
+	.row {
+		margin: 0;
+	}
+	.g-card {
+		background-color: $ax-green;
+		border-radius: 4px;
+		width: 100%;
+		color: #fff;
+		padding: 10px 12px;
+		margin-bottom: 15px;
+		a {
+			color: #fff;
+		}
+	}
+	li {
+		background-color: #fff;
+		padding: 20px;
+	}
+	.mc-title {
+		.title {
+			font-size: 16px;
+		}
+		.help {
+			position: relative;
+		}
+		i {
+			display: block;
+			position: absolute;
+			top: 0px;
+		}
+	}
+}

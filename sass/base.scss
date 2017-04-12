@@ -833,6 +833,91 @@ input, button, select, textarea {
     			cursor: pointer;
 			}
 		}
+		.ey-disc {
+			padding: 15px 30px;
+			.row {
+				margin: 0;
+			}
+			.inner {
+				margin: 0;
+				border-bottom: $ax-bdr;
+				padding: 15px 0;
+				label {
+					font-weight: 400;
+				}
+			}
+			input, textarea {
+				font-size: 16px;
+				font-weight: 400;
+			}
+			.face-icon {
+				padding-right: 0;
+				text-align: center;
+				img {
+					margin-bottom: 8px;
+				}
+				.name {
+					font-size: 14px;
+				}
+			}
+			.input-tip {
+				color: #999;
+				font-size: 14px;
+				span {
+					color: #FF6A4C;
+				}
+			}
+			.comt-list {
+				font-size: 14px;
+				.cmt {
+					padding: 0 0 40px 10px;
+				}	
+			}
+			.cm-info {
+				color: #999;
+				padding-bottom: 12px;
+				img {
+					vertical-align: bottom;
+				}
+				.name {
+					color: #333;
+					padding: 0 25px 0 8px;
+				}
+			}
+			.number {
+				font-size: 32px;
+			}
+			.all-comt {
+				font-size: 16px;
+				padding: 20px 0 30px 10px;
+				a {
+					font-size: 14px;
+				}
+			}
+			.cm-title {
+				padding-bottom: 12px;
+			}
+			.cm-cont {
+				padding: 0 15px;
+			}
+			.mgr-t4 {
+				margin-top: 4px;
+			}
+			.qt-list {
+				margin-top: 10px;
+				li {
+					background-color: #FAFAFA;
+    				border-left: 2px solid #D2D6D3;	
+    				padding: 15px 0;
+				}
+			}
+			.mgr-b6 {
+				margin-bottom: 6px;
+			}
+			.i-cmt {
+				padding-top: 15px;
+			}
+		}
 	}
 	.ey-history {
 		dl {
@@ -1135,6 +1220,7 @@ input, button, select, textarea {
 /* pages */
 @import '_modal_box.scss';
 @import '_search_result.scss';
+@import '_my_center.scss';
 
 @media (max-width: $phone-width) {
 	.qr-hidden {
@@ -1151,7 +1237,7 @@ input, button, select, textarea {
 	background-image: sprite-url($icons);	
 	background-repeat: no-repeat;
 }
-$iconNumber: 26;
+$iconNumber: 29;
 @for $i from 1 through $iconNumber { 
 	.icon-#{$i}{
 	    width: image-width(sprite-file($icons, $i));
