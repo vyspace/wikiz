@@ -1,5 +1,6 @@
 .mc-body {
 	padding: 15px 0;
+	font-size: 16px;
 }
 .mc-side {
 	width: 100%;
@@ -30,8 +31,8 @@
 	}
 }	
 .mc-main {
-	.row {
-		margin: 0;
+	.mgr-b15 {
+		margin-bottom: 15px;
 	}
 	.g-card {
 		background-color: $ax-green;
@@ -40,8 +41,14 @@
 		color: #fff;
 		padding: 10px 12px;
 		margin-bottom: 15px;
+		font-weight: 100;
 		a {
 			color: #fff;
+		}
+	}
+	.mc-table {
+		td {
+			padding: 3px 15px;
 		}
 	}
 	li {
@@ -49,16 +56,121 @@
 		padding: 20px;
 	}
 	.mc-title {
+		padding-bottom: 8px;
+		border-bottom: $ax-bdr;
 		.title {
-			font-size: 16px;
+			font-size: 18px;
+			padding-right: 25px;
+    		color: #999;
 		}
 		.help {
-			position: relative;
+			padding-left: 22px;
+		    position: relative;
+		    font-size: 14px;
 		}
 		i {
 			display: block;
 			position: absolute;
-			top: 0px;
+			top: 0;
+			left: 0;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.mc-info-tab {
+		padding-bottom: 12px;
+    	border-bottom: 1px solid #999;
+		li {
+			padding: 0;
+			padding-right: 8px;
+		}
+		a {
+			border-radius: 2px;
+			padding: 2px 15px;
+		}
+		.active {
+			a, a:hover, a:focus {
+				color: #fff;
+				background-color: $ax-green;
+			}
+		}
+	}
+	.mc-my-info {
+		padding-top: 12px;
+		margin: 0;
+		.image {
+			padding:0;
+		}
+		.score {
+			padding-bottom: 8px;
+		}
+		.idn {
+			color: #999;
+			font-size: 14px;
+		}
+		.btn-modify {
+			padding: 12px 12px;
+			border-radius: 4px;
+			@media (max-width: $pad-width) {
+				font-size: 14px;
+			}
+		}
+		.btn-box {
+			padding-right: 0;
+			@media (min-width: $phone-width) {
+				text-align: right;
+			}
+		}
+		.help {
+			dispaly: block;
+			margin: 3px 0 0 6px;		
+		}
+	}
+	.mc-offer {
+		padding-top: 15px;
+    	margin: 0;
+		.b-block {
+		    background-color: #FAFAFA;
+    		padding: 6px 20px;
+    		margin-bottom: 12px;
+		}
+		.gray {
+			color: #999;
+		}
+		.value {
+			font-size: 32px;
+			margin-bottom: 5px;
+		}
+		.number {
+			color: #FF6A4C;
+		}
+		.s-block {
+			background-color: #FAFAFA;
+    		padding: 4px 20px;
+    		@media (max-width: $pad-width) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+	.tit-cont {
+		padding: 15px 15px 0 15px;
+		a {
+			font-size: 14px;
+		}
+	}
+	.bdr-b0 {
+		border-bottom: 0;
+	}
+	.mcm-table {
+		width: 100%;
+		.cap {
+			background-color: #FAFAFA;
+		}
+		td {
+			border-bottom: $ax-bdr;
+			padding: 3px 0 3px 15px;
 		}
 	}
 }

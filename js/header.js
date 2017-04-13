@@ -1,6 +1,7 @@
 (function($, undefined){
 	"use strict";
-	var headSubBtn = $("#headSubBtn"),
+	var headerMenuBtn = $("#headerMenu a"),
+		headSubBtn = $("#headSubBtn"),
 		headSubMenu = $("#headSubMenu"),
 		menuSwitch = $("#menuSwitch"),
 		subMenuOpen = $("#subMenuOpen"),
@@ -10,6 +11,12 @@
 		navbarCollapse = $("#navbarCollapse"),
 		searchText = $("#searchText"),
 		searchEntry = $("#searchEntry");
+
+	headerMenuBtn.on("click", function(e) {
+		e.stopPropagation();
+		headerMenuBtn.removeClass("active");
+		$(this).addClass("active");
+	});
 	navBtn.on("click", function(e) {
 		e.stopPropagation();
 		navbarCollapse.toggle();
