@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="plugin/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugin/treeview.css">
 	<link rel="stylesheet" href="css/base.min.css">
 </head>
 <body>
@@ -103,62 +104,88 @@
 					    <label class="col-sm-2 control-label" for="channel">所属频道</label>
 					    <div class="btn-group col-sm-4 col-xs-12">
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							请选择<span class="caret pull-right"></span>
+							<span class="txt-show" data-cid="">请选择</span><span class="caret pull-right"></span>
 							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#">aaa</a></li>
-								<li><a href="#">bbb</a></li>
-								<li><a href="#">ccc</a></li>
+							<ul class="dropdown-menu ce_menu" id="ceMenuChannel">
+								<li>aaa</li>
 							</ul>
 						</div>
 						<div class="col-sm-6 col-xs-12 explain">
 							<a href="#" class="more">参看频道分类标准</a>
 						</div>
 					</div>
-					<div class="form-group">
-					    <label class="col-sm-2 control-label" for="channel">上级风格</label>
-					    <div class="btn-group col-sm-4 col-xs-12">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							请选择<span class="caret pull-right"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#">aaa</a></li>
-								<li><a href="#">bbb</a></li>
-								<li><a href="#">ccc</a></li>
-							</ul>
+					<div id="ceDecoration" style="display: none;">
+						<div class="form-group">
+						    <label class="col-sm-2 control-label" for="channel">上级风格</label>
+						    <div class="btn-group col-sm-4 col-xs-12">
+								<a class="btn btn-default" data-toggle="modal" data-target="#upperStyle" id="upperStyleBtn" data-cid="">请选择</a>
+							</div>
+							<div class="col-sm-6 col-xs-12 explain">说明：不填写代表创建顶级风格</div>
 						</div>
-						<div class="col-sm-6 col-xs-12 explain">说明：不填写代表创建顶级风格</div>
-					</div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label">国家</label>
-						<div class="col-sm-10 radio-box">
-							<label class="radio"><input type="radio" checked ／>欧洲</label>
-							<label class="radio"><input type="radio" ／>英国</label>
-							<label class="radio"><input type="radio" ／>法国</label>
-							<label class="radio"><input type="radio" ／>意大利</label>
-							<label class="radio"><input type="radio" ／>德国</label>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">国家</label>
+							<div class="col-sm-10 radio-box">
+								<label class="radio"><input type="radio" checked ／>欧洲</label>
+								<label class="radio"><input type="radio" ／>英国</label>
+								<label class="radio"><input type="radio" ／>法国</label>
+								<label class="radio"><input type="radio" ／>意大利</label>
+								<label class="radio"><input type="radio" ／>德国</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
+							<div class="col-sm-10 radio-box">
+								<label class="radio"><input type="radio" checked disabled="disabled"／>美国</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
+							<div class="col-sm-10 radio-box">
+								<label class="radio"><input type="radio" checked ／>亚洲</label>
+								<label class="radio"><input type="radio" ／>东南亚</label>
+								<label class="radio"><input type="radio" ／>中国</label>
+								<label class="radio"><input type="radio" ／>日本</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
+							<div class="col-sm-10 radio-box">
+								<label class="radio"><input type="radio" checked ／>其他</label>
+								<input type="text" placeholder="请输入" value="" />
+							</div>
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label"></label>
-						<div class="col-sm-10 radio-box">
-							<label class="radio"><input type="radio" checked disabled="disabled"／>美国</label>
+					<div id="ceBrands" style="display: none;">名品
+						<div class="form-group">
+						    <label class="col-sm-2 control-label" for="channel">上级风格</label>
+						    <div class="btn-group col-sm-4 col-xs-12">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								请选择<span class="caret pull-right"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										aaaa
+									</li>
+									<li>bbb</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-xs-12 explain">说明：不填写代表创建顶级风格</div>
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label"></label>
-						<div class="col-sm-10 radio-box">
-							<label class="radio"><input type="radio" checked ／>亚洲</label>
-							<label class="radio"><input type="radio" ／>东南亚</label>
-							<label class="radio"><input type="radio" ／>中国</label>
-							<label class="radio"><input type="radio" ／>日本</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label"></label>
-						<div class="col-sm-10 radio-box">
-							<label class="radio"><input type="radio" checked ／>其他</label>
-							<input type="text" placeholder="请输入" value="" />
+					<div id="ceTerm" style="display: none;">术语
+						<div class="form-group">
+						    <label class="col-sm-2 control-label" for="channel">上级风格</label>
+						    <div class="btn-group col-sm-4 col-xs-12">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								请选择<span class="caret pull-right"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">aaa</a></li>
+									<li><a href="#">bbb</a></li>
+									<li><a href="#">ccc</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-xs-12 explain">说明：不填写代表创建顶级风格</div>
 						</div>
 					</div>
 				</div>
@@ -236,8 +263,37 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="modal fade" id="upperStyle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content mo-box mo-ver1">
+				<div class="mo-header mo-us-header">
+					请选择上级风格
+				</div>
+				<div class="mo-body" id="styleList">
+					<ul id="treeDemo" class="treeview">
+						<li>
+							<div class="hitarea collapsable-hitarea"></div>
+							<a>Item 1</a>
+							<ul>
+						      <li>
+								<div class="hitarea collapsable-hitarea"></div>
+								<a>Item 2</a>
+						      </li>
+						     </ul>
+						</li>
+					</ul>
+				</div>
+				<div class="mo-footer">
+					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
+	<script type="text/javascript" src="plugin/treeview.js"></script>
+	<script type="text/javascript" src="./js/create_entry.js"></script>
 </body>
 </html>
