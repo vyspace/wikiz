@@ -1384,7 +1384,10 @@
 			downObj = null;
 		if(_data && _data.length>0) {
 			$.each(_data, function(i, cell){
-			  	var tit = '<div class="tit">'+cell.channelName+'</div>',
+				if(!cell.channelID) {
+					cell.channelID = '';
+				}
+			  	var tit = '<div class="tit"><a href="javascript:void(0);" data-cid="'+cell.channelID+'">'+cell.channelName+'</a></div>',
 			  		subArr = [];
 			  	$.each(cell.childList, function(i, cell){
 			  		subArr.push('<a href="javascript:void(0);" data-cid="'+cell.channelID+'">'+cell.channelName+'</a>');
