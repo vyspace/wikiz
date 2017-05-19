@@ -1387,7 +1387,7 @@
 				if(!cell.channelID) {
 					cell.channelID = '';
 				}
-			  	var tit = '<div class="tit"><a href="javascript:void(0);" data-cid="'+cell.channelID+'">'+cell.channelName+'</a></div>',
+			  	var tit = '<a href="javascript:void(0);" class="tit" data-cid="'+cell.channelID+'">'+cell.channelName+'</a>',
 			  		subArr = [];
 			  	$.each(cell.childList, function(i, cell){
 			  		subArr.push('<a href="javascript:void(0);" data-cid="'+cell.channelID+'">'+cell.channelName+'</a>');

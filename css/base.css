@@ -1162,7 +1162,7 @@ input, button, select, textarea {
   padding: 10px;
 }
 .mb-2 .ey-basic-fill .ce_menu .tit {
-  color: #999;
+  padding-left: 10px;
 }
 .mb-2 .ey-basic-fill .channel-down {
   display: none;
