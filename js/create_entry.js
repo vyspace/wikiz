@@ -1273,7 +1273,7 @@
 		mutilMenu = $('#mutilMenu'),
 		styleList = $("#styleList"),
 		upperStyle = $('#upperStyle'),
-		upperStyleBtn = $('#upperStyleBtn');
+		upperStyleBtn = $('.upperStyleBtn');
 
 
 	initChannel(ceMenuChannel, channelJson);
@@ -1332,7 +1332,16 @@
 
 	function initStyleList(_triggle, _container, _data) {
 		var lis = createCategory(_data, false),
-			treeDemo = $('<ul id="treeDemo" class="treeview">'+lis+'</ul>');
+			treeDemo = $('<ul id="treeDemo" class="treeview">'+lis+'</ul>'),
+			_this = null;
+		if(_triggle.length > 1){
+        	_triggle.on("click", function(e) {
+        		_this = $(this);
+        	});	
+        }
+        else{
+        	_this = _triggle;
+        }
 		_container.html(treeDemo);
 		treeDemo.treeview({
             persist: "location",
@@ -1343,7 +1352,14 @@
         		txt = $.trim(t.html()),
 				cid = t.data('cid');
         	upperStyle.modal('hide');
-        	_triggle.html(txt).data('cid',cid);
+        	_this.html(txt).data('cid',cid);
+        	switch(cid) {
+        		case 1446:
+        			judgeUpStyle(_this, cid, 'aaa', 'aaa');
+        			break;
+        		default:
+        			break;
+        	}
         });
 	}
 
@@ -1370,5 +1386,15 @@
 			}
 		});
 		return ulStr;
+	}
+
+	function judgeUpStyle(_this, _cid, _name, _tag) {
+		if(!_cid) {
+			return false;
+		}
+		var str = '<div class="form-group"><label class="col-sm-2 control-label" for="channel">'+_name+'</label><div class="btn-group col-sm-4 col-xs-12"><input type="text" class="form-control" id="'+_tag+'" name="'+_tag+'" placeholder="请输入"></div><div class="col-sm-6 col-xs-12"></div></div>';
+		if(_cid == 1446){
+			_this.parents('.form-group').after(str);
+		}
 	}
 })(jQuery);
