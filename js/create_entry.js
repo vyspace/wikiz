@@ -1272,11 +1272,12 @@
 		ceBrands = $('#ceBrands'),
 		mutilMenu = $('#mutilMenu'),
 		styleList = $("#styleList"),
-		upperStyle = $('#upperStyle');
+		upperStyle = $('#upperStyle'),
+		upperStyleBtn = $('#upperStyleBtn');
 
 
 	initChannel(ceMenuChannel, channelJson);
-	initStyleList(styleList, categoryJson);
+	initStyleList(upperStyleBtn, styleList, categoryJson);
 
 	function initChannel(_obj, _data) {
 		var lis = [],
@@ -1329,11 +1330,11 @@
 		return down;
 	}
 
-	function initStyleList(_container, _data) {
+	function initStyleList(_triggle, _container, _data) {
 		var lis = createCategory(_data, false),
-			upperStyleBtn = $('#upperStyleBtn');
-		_container.html('<ul id="treeDemo" class="treeview">'+lis+'</ul>');
-		$('#treeDemo').treeview({
+			treeDemo = $('<ul id="treeDemo" class="treeview">'+lis+'</ul>');
+		_container.html(treeDemo);
+		treeDemo.treeview({
             persist: "location",
 			collapsed: true,
 			unique: true
@@ -1342,7 +1343,7 @@
         		txt = $.trim(t.html()),
 				cid = t.data('cid');
         	upperStyle.modal('hide');
-        	upperStyleBtn.html(txt).data('cid',cid);
+        	_triggle.html(txt).data('cid',cid);
         });
 	}
 
