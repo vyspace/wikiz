@@ -4,11 +4,37 @@
 	}
 	.mo-body {
 		padding-bottom: 18px;
+		a {
+			cursor: pointer;
+			&:hover, &:focus {
+				color: $ax-green;
+			}
+		}
+		.add {
+			color: $ax-green;
+    		font-size: 12px;
+    		cursor: pointer;
+    		margin-left: 10px;
+		}
+		.new-dia {
+			overflow: hidden;
+		}
+		.crumbs {
+			font-size: 14px;
+		    color: #999;
+		    padding: 10px 15px;
+		}
+		.arrow-r {
+			padding: 0 10px;
+		}
 	}
 	.mo-footer {
 		text-align: center;
 		button {
 			padding: 3px 40px;
+		}
+		.mgr-r30 {
+			margin-right: 30px;
 		}
 	}
 	.search-group {

@@ -1266,6 +1266,225 @@
 		    ]
 		}
 	];
+	var countryJson = [
+	    {
+	        "categoryID": 178,
+	        "categoryName": "古埃及",
+	        "childList": [],
+	        "level": 0
+	    },
+	    {
+	        "categoryID": 179,
+	        "categoryName": "古希腊",
+	        "childList": [],
+	        "level": 0
+	    },
+	    {
+	        "categoryID": 180,
+	        "categoryName": "古罗马",
+	        "childList": [],
+	        "level": 0
+	    },
+	    {
+	        "categoryID": 181,
+	        "categoryName": "东罗马帝国",
+	        "childList": [],
+	        "level": 0
+	    },
+	    {
+	        "childList": [
+	            {
+	                "categoryID": 183,
+	                "categoryName": "英国",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 184,
+	                "categoryName": "意大利",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 185,
+	                "categoryName": "西班牙",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 186,
+	                "categoryName": "法国",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 187,
+	                "categoryName": "德国",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 188,
+	                "categoryName": "奥地利",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 189,
+	                "categoryName": "匈牙利",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 190,
+	                "categoryName": "荷兰",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 191,
+	                "categoryName": "比利时",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 192,
+	                "categoryName": "俄罗斯",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 193,
+	                "categoryName": "乌克兰",
+	                "level": 1
+	            },
+	            {
+	                "childList": [
+	                    {
+	                        "categoryID": 195,
+	                        "categoryName": "瑞典",
+	                        "level": 2
+	                    },
+	                    {
+	                        "categoryID": 196,
+	                        "categoryName": "丹麦",
+	                        "level": 2
+	                    },
+	                    {
+	                        "categoryID": 197,
+	                        "categoryName": "挪威",
+	                        "level": 2
+	                    },
+	                    {
+	                        "categoryID": 198,
+	                        "categoryName": "芬兰",
+	                        "level": 2
+	                    }
+	                ],
+	                "categoryID": 194,
+	                "categoryName": "北欧",
+	                "level": 1
+	            }
+	        ],
+	        "categoryID": 182,
+	        "categoryName": "欧洲",
+	        "level": 0
+	    },
+	    {
+	        "childList": [
+	            {
+	                "categoryID": 200,
+	                "categoryName": "美国",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 201,
+	                "categoryName": "加拿大",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 202,
+	                "categoryName": "墨西哥",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 203,
+	                "categoryName": "巴西",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 204,
+	                "categoryName": "阿根廷",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 205,
+	                "categoryName": "智力",
+	                "level": 1
+	            }
+	        ],
+	        "categoryID": 199,
+	        "categoryName": "美洲",
+	        "level": 0
+	    },
+	    {
+	        "childList": [
+	            {
+	                "categoryID": 210,
+	                "categoryName": "日本",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 211,
+	                "categoryName": "东南亚",
+	                "level": 1
+	            },
+	            {
+	                "categoryID": 207,
+	                "categoryName": "中国",
+	                "level": 1,
+	                "childList": [
+	                    {
+	                        "categoryID": 208,
+	                        "categoryName": "香港",
+	                        "level": 2
+	                    },
+	                    {
+	                        "categoryID": 209,
+	                        "categoryName": "台湾",
+	                        "level": 2
+	                    }
+	                ]
+	            },
+	            {
+	                "categoryID": 216,
+	                "categoryName": "澳大利亚",
+	                "level": 1
+	            },
+	            {
+	                "childList": [
+	                    {
+	                        "categoryID": 213,
+	                        "categoryName": "土耳其",
+	                        "level": 2
+	                    },
+	                    {
+	                        "categoryID": 214,
+	                        "categoryName": "埃及",
+	                        "level": 2
+	                    },
+	                    {
+	                        "categoryID": 215,
+	                        "categoryName": "黎巴嫩",
+	                        "level": 2
+	                    }
+	                ],
+	                "categoryID": 212,
+	                "categoryName": "阿拉伯",
+	                "level": 1
+	            }
+	        ],
+	        "categoryID": 206,
+	        "categoryName": "亚洲",
+	        "level": 0
+	    },
+	    {
+	        "categoryID": 217,
+	        "categoryName": "其他",
+	        "childList": [],
+	        "level": 0
+	    }
+	];
 	var ceMenuChannel = $('#ceMenuChannel'),
 		ceDecoration = $('#ceDecoration'),
 		ceTerm = $('#ceTerm'),
@@ -1277,7 +1496,14 @@
 
 
 	initChannel(ceMenuChannel, channelJson);
-	initStyleList(upperStyleBtn, styleList, categoryJson);
+	var cJson = {
+		cid: 'categoryID',
+		cname: 'categoryName',
+		clist: 'childList',
+		clevel: 'level',
+		cnew: true
+	};
+	initStyleList(upperStyleBtn, styleList, countryJson, cJson);
 
 	function initChannel(_obj, _data) {
 		var lis = [],
@@ -1330,10 +1556,22 @@
 		return down;
 	}
 
-	function initStyleList(_triggle, _container, _data) {
-		var lis = createCategory(_data, false),
-			treeDemo = $('<ul id="treeDemo" class="treeview">'+lis+'</ul>'),
-			_this = null;
+	function initStyleList(_triggle, _container, _data, _params) {
+		var opts = {
+				cid: '',
+				cname: '',
+				clist: '',
+				clevel: '',
+				cnew: false
+			},
+			lis = '',
+			treeDemo = null,
+			_this = null,
+			boxes = null,
+			crumbsArr = [];
+		$.extend(opts, _params || {});
+		lis = createCategory(_data, opts);
+		treeDemo = $('<ul id="treeDemo" class="treeview">'+lis+'</ul>');
 		if(_triggle.length > 1){
         	_triggle.on("click", function(e) {
         		_this = $(this);
@@ -1343,49 +1581,78 @@
         	_this = _triggle;
         }
 		_container.html(treeDemo);
+		boxes = _container.parents('.modal-dialog').find('.mo-box');
 		treeDemo.treeview({
             persist: "location",
 			collapsed: true,
 			unique: true
-        }).find('a').on('click', function(e) {
-        	var t = $(this),
-        		txt = $.trim(t.html()),
-				cid = t.data('cid');
-        	upperStyle.modal('hide');
-        	_this.html(txt).data('cid',cid);
-        	switch(cid) {
-        		case 1446:
-        			judgeUpStyle(_this, cid, 'aaa', 'aaa');
-        			break;
-        		default:
-        			break;
+        }).on('click', function(e) {
+        	switch(e.target.tagName){
+        		case 'A':
+					var t = $(e.target),
+		        		txt = $.trim(t.html()),
+						cid = t.data('cid');
+		        	upperStyle.modal('hide');
+		        	_this.html(txt).data('cid',cid);
+		        	switch(cid) {
+		        		case 1446:
+		        			judgeUpStyle(_this, cid, 'aaa', 'aaa');
+		        			break;
+		        		default:
+		        			break;
+		        	}
+		        	break;
+		        case 'SPAN':
+		        	if(opts.cnew) {
+			        	e.stopPropagation();
+			        	var sp = $(e.target),
+			        		a = sp.prev('a');
+			        	crumbsArr = findParents(a);
+			        	boxes.eq(0).hide();
+			        	boxes.eq(1).find('#crumbs').html(createCrumbs(crumbsArr));
+			        	boxes.eq(1).show();
+			        }
+		        	break;
+		        default: 
+		        	break;
         	}
         });
+        if(opts.cnew) {
+        	var subEntryName = $('#subEntryName');
+        	$('#styleSure').on('click', function() {
+        		var ncid = 'n'+crumbsArr[0].cid;
+	        	upperStyle.modal('hide');
+	        	_this.html(subEntryName.val()).data('cid', ncid);
+	        	boxes.eq(1).hide();
+			    boxes.eq(0).show();
+	        });
+	        $('#styleCancel').on('click', function(e) {
+	        	e.stopPropagation();
+	        	boxes.eq(1).hide();
+			    boxes.eq(0).show();
+	        });
+        }
 	}
 
-	function createCategory(_data, _flag) {
-		var lis = [],
-			ulStr = '';
+	function createCategory(_data, _opts) {
+		var ulStr = [],
+			span = '';
+		if(_opts.cnew) {
+			span = '<span class="add">新增</span>';
+		}
 		$.each(_data, function(i, cell){
-			if(!cell.categoryID) {
-				cell.categoryID = '';
+			if(!cell[_opts.cid]) {
+				cell[_opts.cid] = '';
 			}
-			if(cell.childList && cell.childList.length) {
-				var str = createCategory(cell.childList, true);
-				if(_flag) {
-					ulStr += '<ul><li><a data-cid="'+cell.categoryID+'">'+cell.categoryName+'</a>'+str+'</li></ul>';
-				}
-				else{
-					lis.push('<li><a data-cid="'+cell.categoryID+'">'+cell.categoryName+'</a>'+str+'</li>');
-					ulStr = lis.join('');
-				}
+			if(cell[_opts.clist] && cell[_opts.clist].length) {
+				var str = createCategory(cell[_opts.clist], _opts);
+				ulStr.push(('<li><a data-cid="'+cell[_opts.cid]+'">'+cell[_opts.cname]+'</a>'+span+'<ul>')+str+'</ul></li>');
 			}
 			else {
-				lis.push('<li><a data-cid="'+cell.categoryID+'">'+cell.categoryName+'</a></li>');
-				ulStr = '<ul>'+lis.join('')+'</ul>';
+				ulStr.push('<li><a data-cid="'+cell[_opts.cid]+'">'+cell[_opts.cname]+'</a>'+span+'</li>');
 			}
-		});
-		return ulStr;
+		}); 
+		return ulStr.join('');
 	}
 
 	function judgeUpStyle(_this, _cid, _name, _tag) {
@@ -1396,5 +1663,42 @@
 		if(_cid == 1446){
 			_this.parents('.form-group').after(str);
 		}
+	}
+
+	function findParents(_a) {
+		var obj = {
+			"cid": '',
+			"cname": ''
+		},
+		ul = null,
+		arr = [],		
+		objStr = '';
+		if(_a[0].tagName != 'A') {
+			return false;
+		}
+		obj.cid = _a.data('cid');
+		obj.cname = _a.html();
+		ul = _a.parents('ul');
+		if(!ul.eq(0).hasClass('treeview')) {
+			arr.push(obj);
+			var subArr = findParents(ul.eq(0).prevAll('a'));
+			arr = arr.concat(subArr);
+		}
+		else {
+			arr.push(obj);
+		}
+		return arr;
+	}
+
+	function createCrumbs(arr) {
+		var str = '',
+			tag = '<span class="arrow-r">&gt;</span>';
+		$.each(arr.reverse(), function(i, cell) {
+			if(i>=(arr.length-1)) {
+				tag = '';
+			}
+			str += ('<span>'+cell.cname+'</span>'+tag);
+		});
+		return str;
 	}
 })(jQuery);

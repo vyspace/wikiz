@@ -1407,11 +1407,37 @@ input, button, select, textarea {
 .mo-box .mo-body {
   padding-bottom: 18px;
 }
+.mo-box .mo-body a {
+  cursor: pointer;
+}
+.mo-box .mo-body a:hover, .mo-box .mo-body a:focus {
+  color: #35A85B;
+}
+.mo-box .mo-body .add {
+  color: #35A85B;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.mo-box .mo-body .new-dia {
+  overflow: hidden;
+}
+.mo-box .mo-body .crumbs {
+  font-size: 14px;
+  color: #999;
+  padding: 10px 15px;
+}
+.mo-box .mo-body .arrow-r {
+  padding: 0 10px;
+}
 .mo-box .mo-footer {
   text-align: center;
 }
 .mo-box .mo-footer button {
   padding: 3px 40px;
+}
+.mo-box .mo-footer .mgr-r30 {
+  margin-right: 30px;
 }
 .mo-box .search-group {
   max-width: 610px;
