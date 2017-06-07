@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="plugin/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugin/editor.css">
 	<!-- build:css css/base.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<!-- endbuild -->
@@ -206,7 +207,7 @@
 					</div>
 					<dl>
 						<dt class="title">洛可可的早期风格：法国摄政风格</dt>
-						<dd class="mgr-b10"><textarea class="form-control" rows="3">1715年，年仅5岁的路易十五继承法国王位，奥尔良公爵菲利普摄政。奥尔良公爵菲利普摄政的8年时间里，法国家具呈现了从巴洛克到洛可可的过度风格，称为法国摄政风格。摄政式家具在造型上摆脱了巴洛克家具的繁琐和浮夸的艺术手法，对家居外形更多的使用自由流畅的曲线。摄政风格是路易十五风格的前奏，是洛可可风格的早期形式。</textarea></dd>
+						<dd class="mgr-b10"><textarea class="form-control" id="txtEditor" rows="3">1715年，年仅5岁的路易十五继承法国王位，奥尔良公爵菲利普摄政。奥尔良公爵菲利普摄政的8年时间里，法国家具呈现了从巴洛克到洛可可的过度风格，称为法国摄政风格。摄政式家具在造型上摆脱了巴洛克家具的繁琐和浮夸的艺术手法，对家居外形更多的使用自由流畅的曲线。摄政风格是路易十五风格的前奏，是洛可可风格的早期形式。</textarea></dd>
 					</dl>
 					<div>
 						<input class="btn btn-green mgr-r20" type="button" value="删除该子风格" ／>
@@ -410,8 +411,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green" tag="save">保存</button>
 				</div>
 			</div>
 		</div>
@@ -481,8 +482,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -638,8 +639,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -656,8 +657,8 @@
 					<div class="photo"></div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -718,8 +719,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -808,8 +809,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -873,8 +874,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -938,8 +939,8 @@
 					</div>
 				</div>
 				<div class="mo-footer">
-					<button type="button" class="btn btn-green mgr-r16">保存</button>
-					<button type="button" class="btn btn-green" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green-frame mgr-r16" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-green">保存</button>
 				</div>
 			</div>
 		</div>
@@ -1120,6 +1121,8 @@
 	</div>
 	<script type="text/javascript" src="plugin/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/bootstrap.min.js"></script>
+	<script type="text/javascript" src="plugin/editor.js"></script>
+	<script type="text/javascript" src="js/entry_edit.js"></script>
 </body>
 </html>
 
