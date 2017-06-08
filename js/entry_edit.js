@@ -1,3 +1,4 @@
 (function($, undefined){
-	$("#txtEditor").Editor(); 
+	$("#txtEditor1").Editor(); 
+	$("#txtEditor2").Editor(); 
 })(jQuery);
