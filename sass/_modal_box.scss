@@ -1,6 +1,12 @@
 .mo-box {
 	padding: 20px 30px;
 	.mo-header {
+		.comp-head {
+		    text-align: center;
+		    padding-bottom: 30px;
+		    font-size: 16px;
+		    color: $ax-green;
+		}
 	}
 	.mo-body {
 		padding-bottom: 18px;
@@ -414,5 +420,102 @@
 	.no-title {
 		font-size: 18px;
 		color: $ax-green;
+	}
+}
+.mo-ver4 {
+	.pd-15 {
+		padding: 0 15px;
+	}
+	.type-list {
+		width: 100%;
+		padding: 15px 0;
+		li {
+			padding: 0 0 10px 0;
+			i {
+				display: block;
+			    position: absolute;
+			    right: 0;
+		    	top: 2px;
+		    	cursor: pointer;
+			}
+		}
+		input {
+			margin-right: 10px;
+			float: left;
+		}
+		.text-exp {
+			position: relative;
+		    padding-right: 22px;
+		    display: block;
+		    float: left;
+		}
+	}
+	.bdr-b {
+		border-bottom: $ax-bdr;
+	}
+	.mar-b20 {
+		margin-bottom: 20px;
+	}
+	.mar-b12 {
+		margin-bottom: 12px;
+	}
+	.mar-b30 {
+		margin-bottom: 30px;
+	}
+	.tx-2 {
+		text-align: center;
+	}
+	.tx-3 {
+		text-align: right;
+	}
+	@media (min-width: $phone-width) and (max-width: $pad-width) {
+		.tx-2 {
+			text-align: right;
+		}
+		.tx-3 {
+			text-align: left;
+		}
+	}
+	@media (max-width: $phone-width) {
+		.tx-2 {
+			text-align: left;
+		}
+		.tx-3 {
+			text-align: left;
+		}
+	}
+	.check-tag {
+		background-color: #d7eede;
+	    float: left;
+	    padding: 2px 12px;
+	    border-radius: 4px;
+	    color: $ax-green;
+	}
+	.pd-r20 {
+		padding-right: 20px;
+	}
+	.sub-tit {
+		color: #999;
+	}
+	.check-table {
+		td {
+			padding: 5px 10px;
+		}
+	}
+	.opt {
+		color: $ax-green;
+		text-decoration: underline;
+	}
+	.txt-cr {
+		color: #efb1a6;
+	}
+	.entry-exp {
+		li {
+			float: left;
+			padding-right: 15px;
+		}
+		.cont {
+			color: #999;
+		}
 	}
 }
